@@ -26,64 +26,6 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splashscreen);
 
-
-        /*
-            Load any data that is needed here...
-            Splash screen shows while loading,
-        */
-
-        // Make folder in internal storage.
-       // File vrStorage = new File(getApplicationContext().getFilesDir(), "GreenfishVR/");
-        /*Log.d("Ext", "vrStorage: " + vrStorage.toString());
-        Log.d("Ext", "Can we write to vrStorage?: " + vrStorage.canWrite());
-
-        if(!vrStorage.exists()) {
-            Log.d("Ext", "Internal folder does not exist. Creating...");
-            if (!vrStorage.mkdirs()) {
-                Log.d("Ext", "Internal folder creation failed");
-            } else {
-                Log.d("Ext", "Internal folder creation successful");
-            }
-        } else {
-            Log.d("Ext", "Internal folder exists at: " + vrStorage);
-        }
-
-        Log.d("Ext", "----------------------------------------------------------------");
-
-        // Make folder in external storage.
-        File vrStorageExt = new File(Environment.getExternalStorageDirectory(), "GreenfishVR/");
-        Log.d("Ext", "vrStorageExt: " + vrStorageExt.getPath());
-
-        if(!vrStorageExt.exists()) {
-            Log.d("Ext", "External folder does not exist. Creating...");
-            if (!vrStorageExt.mkdirs()) {
-                Log.d("Ext", "External folder creation failed");
-            } else {
-                Log.d("Ext", "External folder creation successful");
-                if (vrStorageExt.list().length == 0) {
-                    //copyAssets();
-                    Log.d("Copying", "Copying assets to phone.");
-                } else {
-                    Log.d("Ext", vrStorageExt + " folder contains " + vrStorageExt.list().length + " files in it");
-                }
-            }
-            Uri uri = Uri.parse(Environment.getExternalStorageDirectory() +"GreenfishVR/tmp.x");
-            sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri));
-            vrStorageExt.setReadable(true);
-        } else {
-            Log.d("Ext", "External folder exists at: " + vrStorageExt);
-            if (vrStorageExt.list().length == 0) {
-                //copyAssets();
-                Log.d("Copying", "Copying assets to phone.");
-            } else {
-                Log.d("Ext", vrStorageExt + " folder contains " + vrStorageExt.list().length + " files in it");
-            }
-
-
-        }*/
-
-
-
         rvi = new RetrieveVideoInfo();
         rvi.SetContext(SplashScreen.this);
         rvi.SetUrlConnection("http://www.greenfishvr.com/fetchVideos.php");
