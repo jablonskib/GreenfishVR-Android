@@ -52,6 +52,11 @@ public class VideoViewer extends Activity {
     private TextView titleLabel, viewsLabel, descriptionLabel;
     private Uri videoURI;
 
+    static {
+        //System.loadLibrary("gvr");
+        System.loadLibrary("pano_video_renderer");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,7 +64,6 @@ public class VideoViewer extends Activity {
         setContentView(R.layout.video_view_activity);
 
         // Bind input and output objects for the view
-
         videoWidgetView = (VrVideoView) findViewById(R.id.videoViewer);
         videoWidgetView.setEventListener(new ActivityEventListener());
         titleLabel = (TextView) findViewById(R.id.videoTitleLabel);
@@ -78,7 +82,6 @@ public class VideoViewer extends Activity {
         }
 
         videoViews = b.getInt("videoViews");
-
         viewsLabel.setText("Views: " + Integer.toString(b.getInt("videoViews")));
 
         if(b.getString("videoDescription") != null) {
@@ -90,9 +93,8 @@ public class VideoViewer extends Activity {
             imageUrl = b.getString("imageUrl");
             ImageView previewImage = (ImageView) findViewById(R.id.previewImage);
             Picasso.with(getApplicationContext()).load(imageUrl).fit().into(previewImage);
-            Log.d("Tyler", imageUrl);
         } else {
-            Log.d("Tyler", "Image URL Not Found");
+            Log.d(TAG, "Image URL Not Found");
         }
 
         videoId = b.getInt("videoId");

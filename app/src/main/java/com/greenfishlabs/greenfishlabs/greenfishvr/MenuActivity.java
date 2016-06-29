@@ -38,7 +38,7 @@ public class MenuActivity extends Activity {
         lView = (ListView) findViewById(R.id.list_container);
         loadingError = (TextView) findViewById(R.id.loading_error);
 
-        if (videoInfo.size() == 0) {
+        if (videoInfo.size() == 0) { // if there was an error loading video info from the server
             Log.d("Tyler", "Issue loading data from server...");
             lView.setVisibility(View.GONE);
             loadingError.setVisibility(View.VISIBLE);
@@ -54,11 +54,10 @@ public class MenuActivity extends Activity {
         //lView.setOverScrollMode(View.OVER_SCROLL_NEVER);
         lView.setScrollingCacheEnabled(false);
         lView.setDrawingCacheEnabled(false);
-
         lView.setAdapter(adapter);
     }
 
-    public void onServerRetry (View view) {
+    public void onServerRetry (View view) { // Retry retrieving video info from server
         rvi = new RetrieveVideoInfo();
         rvi.SetContext(MenuActivity.this);
         rvi.SetUrlConnection("http://www.greenfishvr.com/fetchVideos.php");
@@ -94,7 +93,7 @@ public class MenuActivity extends Activity {
                     }
                 }
 
-                if (videoDataArrayList.size() > 0) {
+                if (videoDataArrayList.size() > 0) { // if info was retrieved from server, populate list view with buttons
                     videoInfo = videoDataArrayList;
 
                     lView.setVisibility(View.VISIBLE);
