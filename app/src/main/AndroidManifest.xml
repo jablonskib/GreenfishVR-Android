@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.greenfishlabs.greenfishlabs.greenfishvr">
+    <uses-sdk android:minSdkVersion="16" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="GreenfishVR"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.MenuActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.VideoViewer"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider602186126628351"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/id_facebook"/>
+    </application>
+</manifest>

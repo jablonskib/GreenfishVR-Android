@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/topBar">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logo"
+                    android:src="@drawable/logo"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="@dimen/top_bar_height"
+                    android:scaleType="centerInside"
+                    android:padding="@dimen/top_bar_logo_padding"
+                    android:background="@color/background_gray_transparent" />
+
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:maxHeight="90dp"
+                    android:background="#00000000"
+                    android:id="@+id/backbtn"
+                    android:src="@drawable/back_button"
+                    android:cropToPadding="false"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="left|center_vertical"
+                    android:onClick="GoBack" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topBar"
+                android:id="@+id/videoContainer">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/previewImage"
+                    android:background="#b0b0b0"
+                    android:visibility="visible"
+                    android:contentDescription="preview image" />
+
+                <com.google.vr.sdk.widgets.video.VrVideoView
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/videoViewer"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/playIcon"
+                    android:src="@drawable/play_icon"
+                    android:adjustViewBounds="true"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:padding="0dp"
+                    android:scaleType="center"
+                    android:onClick="PlayVideo"
+                    android:contentDescription="play icon"
+                    android:background="#00ffffff" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textContainer"
+                android:layout_below="@+id/videoContainer">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sample Video Title"
+                    android:id="@+id/videoTitleLabel"
+                    android:layout_gravity="left"
+                    android:textSize="25dp"
+                    android:paddingLeft="@dimen/video_page_text_padding"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/greenfishGreen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Views: 1,000"
+                    android:id="@+id/viewsCount"
+                    android:textSize="20dp"
+                    android:paddingLeft="@dimen/video_page_text_padding"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#b0b0b0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lipsum_one_para"
+                    android:id="@+id/description"
+                    android:padding="@dimen/video_page_text_padding"
+                    android:layout_gravity="left|bottom"
+                    android:textColor="#b0b0b0" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share To Facebook"
+        android:id="@+id/shareButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="ShareToFacebook" />
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gvr-android-sdk-master.gvr-android-sdk-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gvr-android-sdk-master/gvr-android-sdk-master.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

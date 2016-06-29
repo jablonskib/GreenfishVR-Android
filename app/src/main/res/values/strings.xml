@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Video Viewer</string>
+    <string name="lipsum_one_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat nunc a urna consequat aliquet. Nullam luctus magna sit amet elit consequat, ut fermentum erat dignissim. Nunc eget orci sed nisi mattis rhoncus. Aenean vel malesuada dui, id vehicula risus. Proin consectetur imperdiet iaculis.</string>
+    <string name="button_download">Download</string>
+    <string name="button_play">Play</string>
+    <string name="button_stream">Stream</string>
+    <string name="loading_error">Loading Error: Retry?</string>
+    <string name="id_facebook">602186126628351</string>
+    <string name="Consumer_Key">KeuEbz0NQhfW0ncHebRVYgQpL</string>
+    <string name="Secret_Key">8PJaJULVOT5RDJrZw512ynUsOPW7aG6XcmUiTRipnyYDhCCX59</string>
+</resources>

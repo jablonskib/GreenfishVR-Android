@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    packagingOptions {
+        exclude 'META-INF/maven/com.squareup/otto/pom.xml'
+        exclude 'META-INF/maven/com.squareup.picasso/picasso/pom.properties'
+        exclude 'META-INF/maven/com.squareup.picasso/picasso/pom.xml'
+    }
+    defaultConfig {
+        applicationId "com.greenfishlabs.greenfishlabs.greenfishVr"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.+'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile files('libs/picasso-2.5.2.jar')
+    compile project(':picasso-2.5.2')
+    compile project(':gvr-android-sdk-master')
+    compile project(':audio')
+    compile project(':base')
+    compile project(':common')
+    compile project(':commonwidget')
+    compile project(':videowidget')
+    compile project(':facebook-android-sdk-4.13.1')
+    compile project(':twitter4j-core-4.0.4')
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
