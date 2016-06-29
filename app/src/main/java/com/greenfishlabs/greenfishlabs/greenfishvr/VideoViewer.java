@@ -40,7 +40,6 @@ public class VideoViewer extends Activity {
     public int getLoadVideoStatus() { return loadVideoStatus; }
     private String fileUriString;
     private String videoDesc;
-    private VideoLoaderTask backgroundVideoLoaderTask;
     public VrVideoView videoWidgetView;
     private boolean isPaused = false;
 
@@ -48,9 +47,7 @@ public class VideoViewer extends Activity {
     private boolean videoIsLoaded = false;
     public String videoTitle;
     public String imageUrl;
-    private ParameterForLoading parameterForLoading;
     private TextView titleLabel, viewsLabel, descriptionLabel;
-    private Uri videoURI;
 
     static {
         //System.loadLibrary("gvr");
@@ -78,7 +75,6 @@ public class VideoViewer extends Activity {
 
         if (b.getString("videoUrl") != null) {
             fileUriString = b.getString("videoUrl");
-            videoURI = Uri.fromFile(new File(fileUriString));
         }
 
         videoViews = b.getInt("videoViews");
@@ -132,14 +128,6 @@ public class VideoViewer extends Activity {
         } else {
             Log.i(TAG, "Intent is not ACTION_VIEW. Using the default video.");
         }
-
-        // Load the bitmap in a background thread to avoid blocking the UI thread. This operation can
-        // take 100s of milliseconds.
-        if (backgroundVideoLoaderTask != null) {
-            // Cancel any task from a previous intent sent to this activity.
-            //backgroundVideoLoaderTask.cancel(true);
-        }
-
     }
 
     @Override
@@ -163,6 +151,7 @@ public class VideoViewer extends Activity {
         }
     }
 
+    // Pause video
     @Override
     protected void onPause() {
         super.onPause();
@@ -170,12 +159,14 @@ public class VideoViewer extends Activity {
         isPaused = true;
     }
 
+    // Resume video
     @Override
     protected void onResume() {
         super.onResume();
         videoWidgetView.resumeRendering();
     }
 
+    // Video view destroyed
     @Override
     protected void onDestroy() {
         videoWidgetView.shutdown();
@@ -191,16 +182,17 @@ public class VideoViewer extends Activity {
         isPaused = !isPaused;
     }
 
+    // Play button pressed
     public void PlayVideo(View view) {
+        // Grab play button object
         ImageButton playBtn = (ImageButton) findViewById(R.id.playIcon);
         ImageView previewImage = (ImageView) findViewById(R.id.previewImage);
 
         previewImage.setVisibility(View.GONE);
         videoWidgetView.setVisibility(View.VISIBLE);
 
-        parameterForLoading = new ParameterForLoading(Uri.fromFile(new File(fileUriString)), videoWidgetView);
-        try {
-            parameterForLoading.GetVrVideoView().loadVideo(Uri.parse(fileUriString), null);
+        try { // try to load video from video url
+            videoWidgetView.loadVideo(Uri.parse(fileUriString), null);
         } catch (Exception e) {
             // An error here is normally due to being unable to locate the file.
             loadVideoStatus = LOAD_VIDEO_STATUS_ERROR;
@@ -260,49 +252,12 @@ public class VideoViewer extends Activity {
         }
     }
 
-    static class ParameterForLoading {
-        public Uri uri;
-        public VrVideoView videoView;
-
-        public ParameterForLoading(Uri uri, VrVideoView videoView) {
-            this.uri = uri;
-            this.videoView = videoView;
-        }
-
-        public Uri GetUri () {
-            return uri;
-        }
-
-        public VrVideoView GetVrVideoView () {
-            return videoView;
-        }
-    }
-
-    //TODO: Errors
-    // Error when getting the video to show in the 360 viewport
-    // Tyler 6/13
-    class VideoLoaderTask extends AsyncTask<ParameterForLoading, Void, Boolean> {
-        @Override
-        protected Boolean doInBackground(ParameterForLoading... parameterForLoadings) {
-            try {
-                //parameterForLoadings[0].GetVrVideoView().loadVideo(Uri.parse(fileUriString));
-            } catch (Exception e) {
-                // An error here is normally due to being unable to locate the file.
-                loadVideoStatus = LOAD_VIDEO_STATUS_ERROR;
-                Log.e(TAG, "Could not open video: " + e);
-                e.printStackTrace();
-            }
-            return true;
-        }
-    }
-
-    public void ShareToFacebook(View view)
-    {
-
+    public void ShareToFacebook(View view) {
         Log.d("ShareButton", "Pressed");
         ShareDialog sd = new ShareDialog(this);
 
-        ShareLinkContent slc = new ShareLinkContent.Builder().setContentDescription(videoDesc).setContentTitle(videoTitle).setQuote("View now on the Greenfish VR app.")
+        ShareLinkContent slc = new ShareLinkContent.Builder().setContentDescription(videoDesc)
+                .setContentTitle(videoTitle).setQuote("View now on the Greenfish VR app.")
                 .setContentUrl(Uri.parse(fileUriString)).setImageUrl(Uri.parse(imageUrl)).build();
         sd.show(slc );
     }

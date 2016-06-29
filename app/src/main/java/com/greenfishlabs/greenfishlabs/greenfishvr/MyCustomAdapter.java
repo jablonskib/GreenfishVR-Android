@@ -27,7 +27,7 @@ public class MyCustomAdapter extends BaseAdapter {
     public MyCustomAdapter(VrVideoInfo[] vrList, Activity activity, Context context) {
         this.context = context;
         this.activity = activity;
-        listOfVrVideoInfo = vrList;
+        this.listOfVrVideoInfo = vrList;
 
         inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
@@ -67,7 +67,10 @@ public class MyCustomAdapter extends BaseAdapter {
             holder = (Holder)convertView.getTag();
         }
 
+        // Inject preview image into each button
         Picasso.with(context).load(listOfVrVideoInfo[position].GetImageURl()).fit().transform(new RoundedTransformation(2, 0)).into(holder.imageView);
+
+        // Passes video info to video info activity that is being loaded
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
