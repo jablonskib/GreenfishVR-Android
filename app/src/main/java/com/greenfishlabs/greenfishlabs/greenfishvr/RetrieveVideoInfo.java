@@ -36,6 +36,8 @@ public class RetrieveVideoInfo extends AsyncTask<String, String, Void> {
             httpURLConnection.setConnectTimeout(15000);
 
             int responseStatus = httpURLConnection.getResponseCode();
+
+            //Get response from the server if everything was OK.
             if(responseStatus == HttpURLConnection.HTTP_OK) {
                 String line;
                 BufferedReader br=new BufferedReader(new InputStreamReader(httpURLConnection.getInputStream()));

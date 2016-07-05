@@ -36,6 +36,7 @@ public class UpdateViews extends AsyncTask<Void, Void, Void> {
         StringBuffer requestParams = new StringBuffer();
 
         Iterator<String> paramIterator = parameters.keySet().iterator();
+        //Format to POST.
         while (paramIterator.hasNext()) {
             String key = paramIterator.next();
             String value = parameters.get(key);
@@ -79,6 +80,7 @@ public class UpdateViews extends AsyncTask<Void, Void, Void> {
         return null;
     }
 
+    //Set the parameters to be passed in in key-pair format.
     public void SetParameters(Map<String, String> p)
     {
         parameters = p;

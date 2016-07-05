@@ -1,7 +1,6 @@
 package com.greenfishlabs.greenfishlabs.greenfishvr;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -26,8 +25,8 @@ public class MenuActivity extends Activity {
     MyCustomAdapter adapter;
     ArrayList<VrVideoInfo> videoInfo;
 
-    ListView lView;
-    TextView loadingError;
+    private ListView lView;
+    private TextView loadingError;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +64,7 @@ public class MenuActivity extends Activity {
         r.run();
     }
 
+    // This runnable runs to constantly check if the server responded with data.
     final Runnable r = new Runnable() {
         @Override
         public void run() {

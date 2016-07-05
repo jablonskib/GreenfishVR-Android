@@ -2,9 +2,6 @@ package com.greenfishlabs.greenfishlabs.greenfishvr;
 
 import com.facebook.FacebookSdk;
 import com.facebook.share.model.ShareLinkContent;
-import com.facebook.share.model.SharePhoto;
-import com.facebook.share.model.ShareVideo;
-import com.facebook.share.model.ShareVideoContent;
 import com.facebook.share.widget.ShareDialog;
 import com.google.vr.sdk.widgets.video.VrVideoEventListener;
 import com.google.vr.sdk.widgets.video.VrVideoView;
@@ -21,11 +18,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import com.facebook.share.widget.ShareButton;
 public class VideoViewer extends Activity {
 
     private static final String TAG = MenuActivity.class.getSimpleName();
@@ -61,7 +55,7 @@ public class VideoViewer extends Activity {
         setContentView(R.layout.video_view_activity);
 
         // Bind input and output objects for the view
-        videoWidgetView = (VrVideoView) findViewById(R.id.videoViewer);
+        videoWidgetView = (VrVideoView) findViewById(R.id.vrViewer);
         videoWidgetView.setEventListener(new ActivityEventListener());
         titleLabel = (TextView) findViewById(R.id.videoTitleLabel);
         viewsLabel = (TextView) findViewById(R.id.viewsCount);
@@ -214,6 +208,7 @@ public class VideoViewer extends Activity {
     }
 
     public void GoBack (View view) {
+        videoWidgetView.pauseVideo();
         finish();
     }
 

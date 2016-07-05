@@ -60,6 +60,9 @@ public class VrVideoInfo implements Parcelable
 
     }
 
+    /*
+        Accessors
+     */
     public String GetImageURl() {
         return videoImageURL;
     }

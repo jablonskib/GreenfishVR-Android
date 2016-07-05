@@ -76,7 +76,7 @@
                 <com.google.vr.sdk.widgets.video.VrVideoView
                     android:layout_width="fill_parent"
                     android:layout_height="250dp"
-                    android:id="@+id/videoViewer"
+                    android:id="@+id/vrViewer"
                     android:layout_gravity="center_horizontal"
                     android:visibility="gone" />
 

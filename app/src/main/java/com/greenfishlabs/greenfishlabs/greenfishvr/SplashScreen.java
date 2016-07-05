@@ -1,8 +1,6 @@
 package com.greenfishlabs.greenfishlabs.greenfishvr;
 
 import android.content.Intent;
-import android.hardware.Sensor;
-import android.hardware.SensorManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
@@ -26,6 +24,7 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splashscreen);
 
+        //When calling RetrieveVideoInfo, you MUST set the context and url connection.
         rvi = new RetrieveVideoInfo();
         rvi.SetContext(SplashScreen.this);
         rvi.SetUrlConnection("http://www.greenfishvr.com/fetchVideos.php");
