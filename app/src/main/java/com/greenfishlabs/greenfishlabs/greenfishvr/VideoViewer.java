@@ -208,7 +208,8 @@ public class VideoViewer extends Activity {
     }
 
     public void GoBack (View view) {
-        videoWidgetView.pauseVideo();
+        videoWidgetView.pauseRendering();
+        videoWidgetView.shutdown();
         finish();
     }
 

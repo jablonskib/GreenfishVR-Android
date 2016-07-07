@@ -16,7 +16,7 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1978f4f6-4b8f-4233-a69e-59415eedf31e" name="Default" comment="" />
@@ -46,11 +46,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UpdateViews.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java">
+      <file leaf-file-name="VideoViewer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VideoViewer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21263158">
-              <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+            <state vertical-scroll-proportion="-0.71789473">
+              <caret line="216" column="24" selection-start-line="216" selection-start-column="24" selection-end-line="216" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -3122,11 +3122,11 @@
         <option value="$PROJECT_DIR$/captures/GreenfishVR_2016.07.05_19.20.txt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VrVideoInfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/MenuActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VideoViewer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/MyCustomAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/SplashScreen.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/RetrieveVideoInfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VideoViewer.java" />
       </list>
     </option>
   </component>
@@ -3161,124 +3161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="videoviewer" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="greenfishvr" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3409,7 +3291,79 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="videoviewer" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="greenfishvr" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3696,7 +3650,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="772" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3704,8 +3658,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3725,6 +3678,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3744,19 +3698,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <marker date="1467761636363" expanded="true" signature="61:442" placeholder="..." />
+            <marker date="1467761636363" expanded="true" signature="444:487" placeholder="/**...*/" />
+            <marker date="1467761636363" expanded="true" signature="687:2599" placeholder="{...}" />
+            <marker date="1467761636363" expanded="false" signature="2714:2729" placeholder=" { " />
+            <marker date="1467761636363" expanded="false" signature="2744:2750" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <marker date="1467761636363" expanded="true" signature="61:442" placeholder="..." />
+            <marker date="1467761636363" expanded="true" signature="444:487" placeholder="/**...*/" />
+            <marker date="1467761636363" expanded="true" signature="687:2599" placeholder="{...}" />
+            <marker date="1467761636363" expanded="false" signature="2714:2729" placeholder=" { " />
+            <marker date="1467761636363" expanded="false" signature="2744:2750" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467682090391" expanded="true" signature="111:1529" placeholder="..." />
-            <marker date="1467682090391" expanded="true" signature="371:778" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="594:617" placeholder="&quot;50dp&quot;" />
-            <marker date="1467682090391" expanded="false" signature="683:712" placeholder="&quot;10dp&quot;" />
-            <marker date="1467682090391" expanded="true" signature="794:1159" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="905:928" placeholder="&quot;Loading Error: Retry?&quot;" />
-            <marker date="1467682090391" expanded="true" signature="1175:1512" placeholder="..." />
-          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3767,15 +3740,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467682090391" expanded="true" signature="111:1529" placeholder="..." />
-            <marker date="1467682090391" expanded="true" signature="371:778" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="594:617" placeholder="&quot;50dp&quot;" />
-            <marker date="1467682090391" expanded="false" signature="683:712" placeholder="&quot;10dp&quot;" />
-            <marker date="1467682090391" expanded="true" signature="794:1159" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="905:928" placeholder="&quot;Loading Error: Retry?&quot;" />
-            <marker date="1467682090391" expanded="true" signature="1175:1512" placeholder="..." />
-          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3786,15 +3750,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467682090391" expanded="true" signature="111:1529" placeholder="..." />
-            <marker date="1467682090391" expanded="true" signature="371:778" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="594:617" placeholder="&quot;50dp&quot;" />
-            <marker date="1467682090391" expanded="false" signature="683:712" placeholder="&quot;10dp&quot;" />
-            <marker date="1467682090391" expanded="true" signature="794:1159" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="905:928" placeholder="&quot;Loading Error: Retry?&quot;" />
-            <marker date="1467682090391" expanded="true" signature="1175:1512" placeholder="..." />
-          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3805,15 +3760,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467682090391" expanded="true" signature="111:1529" placeholder="..." />
-            <marker date="1467682090391" expanded="true" signature="371:778" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="594:617" placeholder="&quot;50dp&quot;" />
-            <marker date="1467682090391" expanded="false" signature="683:712" placeholder="&quot;10dp&quot;" />
-            <marker date="1467682090391" expanded="true" signature="794:1159" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="905:928" placeholder="&quot;Loading Error: Retry?&quot;" />
-            <marker date="1467682090391" expanded="true" signature="1175:1512" placeholder="..." />
-          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3824,15 +3770,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467682090391" expanded="true" signature="111:1529" placeholder="..." />
-            <marker date="1467682090391" expanded="true" signature="371:778" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="594:617" placeholder="&quot;50dp&quot;" />
-            <marker date="1467682090391" expanded="false" signature="683:712" placeholder="&quot;10dp&quot;" />
-            <marker date="1467682090391" expanded="true" signature="794:1159" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="905:928" placeholder="&quot;Loading Error: Retry?&quot;" />
-            <marker date="1467682090391" expanded="true" signature="1175:1512" placeholder="..." />
-          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3843,15 +3780,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467682090391" expanded="true" signature="111:1529" placeholder="..." />
-            <marker date="1467682090391" expanded="true" signature="371:778" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="594:617" placeholder="&quot;50dp&quot;" />
-            <marker date="1467682090391" expanded="false" signature="683:712" placeholder="&quot;10dp&quot;" />
-            <marker date="1467682090391" expanded="true" signature="794:1159" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="905:928" placeholder="&quot;Loading Error: Retry?&quot;" />
-            <marker date="1467682090391" expanded="true" signature="1175:1512" placeholder="..." />
-          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3862,7 +3790,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3873,12 +3800,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1466606694000" expanded="true" signature="113:1506" placeholder="..." />
-            <marker date="1466606694000" expanded="true" signature="290:742" placeholder="..." />
-            <marker date="1466606694000" expanded="true" signature="759:1081" placeholder="..." />
-            <marker date="1466606694000" expanded="true" signature="1121:1487" placeholder="..." />
-          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3889,15 +3810,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467682090391" expanded="true" signature="111:1529" placeholder="..." />
-            <marker date="1467682090391" expanded="true" signature="371:778" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="594:617" placeholder="&quot;50dp&quot;" />
-            <marker date="1467682090391" expanded="false" signature="683:712" placeholder="&quot;10dp&quot;" />
-            <marker date="1467682090391" expanded="true" signature="794:1159" placeholder="..." />
-            <marker date="1467682090391" expanded="false" signature="905:928" placeholder="&quot;Loading Error: Retry?&quot;" />
-            <marker date="1467682090391" expanded="true" signature="1175:1512" placeholder="..." />
-          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3908,29 +3820,6 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1467760509905" expanded="true" signature="111:6404" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="302:6109" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="455:6091" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="681:2664" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="896:1411" placeholder="..." />
-            <marker date="1467760509905" expanded="false" signature="1191:1214" placeholder="&quot;50dp&quot;" />
-            <marker date="1467760509905" expanded="false" signature="1304:1333" placeholder="&quot;10dp&quot;" />
-            <marker date="1467760509905" expanded="true" signature="1440:1996" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="2024:2637" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="2691:4244" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="2925:3244" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="3307:3570" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="3601:4216" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="4272:6064" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="4559:5113" placeholder="..." />
-            <marker date="1467760509905" expanded="true" signature="5141:5613" placeholder="..." />
-            <marker date="1467760509905" expanded="false" signature="5436:5468" placeholder="&quot;16dp&quot;" />
-            <marker date="1467760509905" expanded="true" signature="5641:6036" placeholder="..." />
-            <marker date="1467760509905" expanded="false" signature="5788:5813" placeholder="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit...&quot;" />
-            <marker date="1467760509905" expanded="false" signature="5900:5932" placeholder="&quot;16dp&quot;" />
-            <marker date="1467760509905" expanded="true" signature="6123:6386" placeholder="..." />
-          </folding>
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer">
@@ -3941,7 +3830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3949,13 +3837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07157895">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding>
-            <marker date="1467761556698" expanded="true" signature="61:396" placeholder="..." />
-            <marker date="1467761556698" expanded="true" signature="876:1920" placeholder="{...}" />
-            <marker date="1467761556698" expanded="true" signature="1964:2252" placeholder="{...}" />
-            <marker date="1467761556698" expanded="false" signature="2358:2420" placeholder="() → {" />
-            <marker date="1467761556698" expanded="false" signature="4463:4474" placeholder="}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3963,46 +3844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07157895">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <marker date="1466537684000" expanded="true" signature="61:288" placeholder="..." />
-            <marker date="1466537684000" expanded="true" signature="290:449" placeholder="//..." />
-            <marker date="1466537684000" expanded="true" signature="740:807" placeholder="{...}" />
-            <marker date="1466537684000" expanded="true" signature="872:1432" placeholder="{...}" />
-            <marker date="1466537684000" expanded="false" signature="1471:1482" placeholder=" { " />
-            <marker date="1466537684000" expanded="false" signature="1499:1505" placeholder=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VideoViewer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7515789">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <marker date="1467761557120" expanded="true" signature="61:672" placeholder="..." />
-            <marker date="1467761557120" expanded="true" signature="1297:1324" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="1672:1767" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="1838:3714" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="3776:4063" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="3842:3969" placeholder="//..." />
-            <marker date="1467761557120" expanded="true" signature="4278:4784" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="4863:5175" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="5257:5590" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="5654:5753" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="5819:5895" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="5970:6040" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="6073:6244" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="6310:7467" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="7504:7567" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="7639:8734" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="7781:7934" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="8086:8305" placeholder="{...}" />
-            <marker date="1467761557120" expanded="false" signature="8354:8369" placeholder=" { " />
-            <marker date="1467761557120" expanded="false" signature="8383:8393" placeholder=" }" />
-            <marker date="1467761557120" expanded="true" signature="8484:8496" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="8676:8728" placeholder="{...}" />
-            <marker date="1467761557120" expanded="true" signature="8779:9184" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4010,32 +3851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07157895">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <marker date="1467761556857" expanded="true" signature="61:109" placeholder="..." />
-            <marker date="1467761556857" expanded="true" signature="111:209" placeholder="/**...*/" />
-            <marker date="1467761556857" expanded="true" signature="437:663" placeholder="{...}" />
-            <marker date="1467761556857" expanded="true" signature="781:1194" placeholder="{...}" />
-            <marker date="1467761556857" expanded="false" signature="1014:1029" placeholder=" { " />
-            <marker date="1467761556857" expanded="false" signature="1056:1066" placeholder=" }" />
-            <marker date="1467761556857" expanded="false" signature="1134:1149" placeholder=" { " />
-            <marker date="1467761556857" expanded="false" signature="1178:1188" placeholder=" }" />
-            <marker date="1467761556857" expanded="true" signature="1232:1464" placeholder="{...}" />
-            <marker date="1467761556857" expanded="true" signature="1599:1783" placeholder="{...}" />
-            <marker date="1467761556857" expanded="false" signature="1849:1860" placeholder=" { " />
-            <marker date="1467761556857" expanded="false" signature="1881:1887" placeholder=" }" />
-            <marker date="1467761556857" expanded="false" signature="1917:1928" placeholder=" { " />
-            <marker date="1467761556857" expanded="false" signature="1946:1952" placeholder=" }" />
-            <marker date="1467761556857" expanded="false" signature="1988:1999" placeholder=" { " />
-            <marker date="1467761556857" expanded="false" signature="2023:2029" placeholder=" }" />
-            <marker date="1467761556857" expanded="false" signature="2057:2068" placeholder=" { " />
-            <marker date="1467761556857" expanded="false" signature="2084:2090" placeholder=" }" />
-            <marker date="1467761556857" expanded="false" signature="2117:2132" placeholder=" { " />
-            <marker date="1467761556857" expanded="false" signature="2149:2155" placeholder=" }" />
-            <marker date="1467761556857" expanded="false" signature="2179:2194" placeholder=" { " />
-            <marker date="1467761556857" expanded="false" signature="2209:2215" placeholder=" }" />
-            <marker date="1467761556857" expanded="false" signature="2263:2278" placeholder=" { " />
-            <marker date="1467761556857" expanded="false" signature="2287:2293" placeholder=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4043,20 +3858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6189474">
           <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-          <folding>
-            <marker date="1467761556918" expanded="true" signature="61:369" placeholder="..." />
-            <marker date="1467761556918" expanded="true" signature="371:413" placeholder="/**...*/" />
-            <marker date="1467761556918" expanded="true" signature="709:918" placeholder="{...}" />
-            <marker date="1467761556918" expanded="false" signature="960:971" placeholder=" { " />
-            <marker date="1467761556918" expanded="false" signature="1003:1009" placeholder=" }" />
-            <marker date="1467761556918" expanded="false" signature="1060:1071" placeholder=" { " />
-            <marker date="1467761556918" expanded="false" signature="1101:1107" placeholder=" }" />
-            <marker date="1467761556918" expanded="true" signature="1158:1249" placeholder="{...}" />
-            <marker date="1467761556918" expanded="true" signature="1282:1318" placeholder="{...}" />
-            <marker date="1467761556918" expanded="true" signature="1414:2976" placeholder="{...}" />
-            <marker date="1467761556918" expanded="false" signature="2177:2269" placeholder="(v) → {" />
-            <marker date="1467761556918" expanded="false" signature="2925:2940" placeholder="}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4064,12 +3865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.57473683">
           <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
-          <folding>
-            <marker date="1467761557063" expanded="true" signature="61:308" placeholder="..." />
-            <marker date="1467761557063" expanded="true" signature="595:1019" placeholder="{...}" />
-            <marker date="1467761557063" expanded="false" signature="1044:1106" placeholder="() → {" />
-            <marker date="1467761557063" expanded="false" signature="2530:2541" placeholder="}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4077,24 +3872,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.21473685">
           <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
-          <folding>
-            <marker date="1467761556790" expanded="true" signature="61:416" placeholder="..." />
-            <marker date="1467761556790" expanded="true" signature="418:512" placeholder="/**...*/" />
-            <marker date="1467761556790" expanded="true" signature="738:1963" placeholder="{...}" />
-            <marker date="1467761556790" expanded="false" signature="1995:2010" placeholder=" { " />
-            <marker date="1467761556790" expanded="false" signature="2019:2025" placeholder=" }" />
-            <marker date="1467761556790" expanded="false" signature="2088:2103" placeholder=" { " />
-            <marker date="1467761556790" expanded="false" signature="2115:2121" placeholder=" }" />
-            <marker date="1467761556790" expanded="false" signature="2242:2257" placeholder=" { " />
-            <marker date="1467761556790" expanded="false" signature="2284:2290" placeholder=" }" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21263158">
+        <state vertical-scroll-proportion="0.4757895">
           <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <marker date="1467761636363" expanded="true" signature="61:442" placeholder="..." />
+            <marker date="1467761636363" expanded="true" signature="444:487" placeholder="/**...*/" />
+            <marker date="1467761636363" expanded="true" signature="687:2599" placeholder="{...}" />
+            <marker date="1467761636363" expanded="false" signature="2714:2729" placeholder=" { " />
+            <marker date="1467761636363" expanded="false" signature="2744:2750" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VideoViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.71789473">
+          <caret line="216" column="24" selection-start-line="216" selection-start-column="24" selection-end-line="216" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
