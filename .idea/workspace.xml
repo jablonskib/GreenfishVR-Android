@@ -16,7 +16,7 @@
     </layouts>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1978f4f6-4b8f-4233-a69e-59415eedf31e" name="Default" comment="" />
@@ -46,14 +46,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VideoViewer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VideoViewer.java">
+      <file leaf-file-name="SplashScreen.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/SplashScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.71789473">
-              <caret line="216" column="24" selection-start-line="216" selection-start-column="24" selection-end-line="216" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.5920502">
+              <caret line="29" column="94" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="94" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -3118,23 +3116,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/video_view_activity.xml" />
         <option value="$PROJECT_DIR$/captures/GreenfishVR_2016.07.05_19.20.txt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VrVideoInfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/MenuActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/MyCustomAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/SplashScreen.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/RetrieveVideoInfo.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VideoViewer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/video_view_activity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/SplashScreen.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="54" />
-    <option name="y" value="-8" />
     <option name="width" value="1320" />
-    <option name="height" value="772" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -3161,6 +3158,108 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="videoviewer" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GreenfishVR" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="greenfishvr" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -3291,79 +3390,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="videoviewer" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GreenfishVR" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="greenfishvr" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3649,8 +3678,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="772" extended-state="0" />
-    <editor active="false" />
+    <frame x="54" y="0" width="1320" height="775" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3658,7 +3687,8 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32819074" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -3678,7 +3708,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -3698,16 +3727,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/SplashScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <caret line="29" column="77" selection-start-line="29" selection-start-column="77" selection-end-line="29" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VideoViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="216" column="24" selection-start-line="216" selection-start-column="24" selection-end-line="216" selection-end-column="25" />
           <folding>
-            <marker date="1467761636363" expanded="true" signature="61:442" placeholder="..." />
-            <marker date="1467761636363" expanded="true" signature="444:487" placeholder="/**...*/" />
-            <marker date="1467761636363" expanded="true" signature="687:2599" placeholder="{...}" />
-            <marker date="1467761636363" expanded="false" signature="2714:2729" placeholder=" { " />
-            <marker date="1467761636363" expanded="false" signature="2744:2750" placeholder=" }" />
+            <marker date="1468026846435" expanded="true" signature="61:672" placeholder="..." />
+            <marker date="1468026846435" expanded="true" signature="1297:1324" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="1672:1767" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="1838:3769" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="3831:4118" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="3897:4024" placeholder="//..." />
+            <marker date="1468026846435" expanded="true" signature="4333:4839" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="4918:5230" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="5312:5645" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="5709:5808" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="5874:5950" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="6025:6095" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="6128:6299" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="6365:7581" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="7618:7721" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="7793:8888" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="7935:8088" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="8240:8459" placeholder="{...}" />
+            <marker date="1468026846435" expanded="false" signature="8508:8523" placeholder=" { " />
+            <marker date="1468026846435" expanded="false" signature="8537:8547" placeholder=" }" />
+            <marker date="1468026846435" expanded="true" signature="8638:8650" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="8830:8882" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="8933:9338" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -3717,133 +3772,103 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
           <folding>
-            <marker date="1467761636363" expanded="true" signature="61:442" placeholder="..." />
-            <marker date="1467761636363" expanded="true" signature="444:487" placeholder="/**...*/" />
-            <marker date="1467761636363" expanded="true" signature="687:2599" placeholder="{...}" />
-            <marker date="1467761636363" expanded="false" signature="2714:2729" placeholder=" { " />
-            <marker date="1467761636363" expanded="false" signature="2744:2750" placeholder=" }" />
+            <marker date="1468027682418" expanded="true" signature="61:442" placeholder="..." />
+            <marker date="1468027682418" expanded="true" signature="444:487" placeholder="/**...*/" />
+            <marker date="1468027682418" expanded="true" signature="687:2621" placeholder="{...}" />
+            <marker date="1468027682418" expanded="false" signature="2736:2751" placeholder=" { " />
+            <marker date="1468027682418" expanded="false" signature="2766:2772" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+          <folding>
+            <marker date="1468027682418" expanded="true" signature="61:442" placeholder="..." />
+            <marker date="1468027682418" expanded="true" signature="444:487" placeholder="/**...*/" />
+            <marker date="1468027682418" expanded="true" signature="687:2621" placeholder="{...}" />
+            <marker date="1468027682418" expanded="false" signature="2736:2751" placeholder=" { " />
+            <marker date="1468027682418" expanded="false" signature="2766:2772" placeholder=" }" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_list_layout.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/splashscreen.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/video_view_activity.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/captures/GreenfishVR_2016.07.05_19.20.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/MenuActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07157895">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/RoundedTransformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07157895">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -3854,48 +3879,186 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/MyCustomAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/MenuActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6189474">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/SplashScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.57473683">
-          <caret line="26" column="86" selection-start-line="26" selection-start-column="86" selection-end-line="26" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/RetrieveVideoInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.21473685">
-          <caret line="39" column="65" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4757895">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.33263597">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
-            <marker date="1467761636363" expanded="true" signature="61:442" placeholder="..." />
-            <marker date="1467761636363" expanded="true" signature="444:487" placeholder="/**...*/" />
-            <marker date="1467761636363" expanded="true" signature="687:2599" placeholder="{...}" />
-            <marker date="1467761636363" expanded="false" signature="2714:2729" placeholder=" { " />
-            <marker date="1467761636363" expanded="false" signature="2744:2750" placeholder=" }" />
+            <marker date="1467761556698" expanded="true" signature="61:396" placeholder="..." />
+            <marker date="1467761556698" expanded="true" signature="876:1920" placeholder="{...}" />
+            <marker date="1467761556698" expanded="true" signature="1964:2252" placeholder="{...}" />
+            <marker date="1467761556698" expanded="false" signature="2358:2420" placeholder="() → {" />
+            <marker date="1467761556698" expanded="false" signature="4463:4474" placeholder="}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/VideoViewer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.71789473">
-          <caret line="216" column="24" selection-start-line="216" selection-start-column="24" selection-end-line="216" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.035564855">
+          <caret line="74" column="81" selection-start-line="74" selection-start-column="81" selection-end-line="74" selection-end-column="81" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1468026846435" expanded="true" signature="61:672" placeholder="..." />
+            <marker date="1468026846435" expanded="true" signature="1297:1324" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="1672:1767" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="1838:3769" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="3831:4118" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="3897:4024" placeholder="//..." />
+            <marker date="1468026846435" expanded="true" signature="4333:4839" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="4918:5230" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="5312:5645" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="5709:5808" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="5874:5950" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="6025:6095" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="6128:6299" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="6365:7581" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="7618:7721" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="7793:8888" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="7935:8088" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="8240:8459" placeholder="{...}" />
+            <marker date="1468026846435" expanded="false" signature="8508:8523" placeholder=" { " />
+            <marker date="1468026846435" expanded="false" signature="8537:8547" placeholder=" }" />
+            <marker date="1468026846435" expanded="true" signature="8638:8650" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="8830:8882" placeholder="{...}" />
+            <marker date="1468026846435" expanded="true" signature="8933:9338" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/video_view_activity.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="59.53846">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+          <folding>
+            <marker date="1468027441408" expanded="true" signature="111:6484" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="302:6189" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="455:6171" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="681:2664" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="896:1411" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="1191:1214" placeholder="&quot;50dp&quot;" />
+            <marker date="1468027441408" expanded="true" signature="1304:1333" placeholder="&quot;10dp&quot;" />
+            <marker date="1468027441408" expanded="true" signature="1440:1996" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="2024:2637" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="2691:4244" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="2925:3244" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="3307:3570" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="3601:4216" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="4272:6144" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="4597:5151" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="5721:6116" placeholder="..." />
+            <marker date="1468027441408" expanded="true" signature="5868:5893" placeholder="&quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit...&quot;" />
+            <marker date="1468027441408" expanded="true" signature="5980:6012" placeholder="&quot;16dp&quot;" />
+            <marker date="1468027441408" expanded="true" signature="6203:6466" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menu_activity.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1467682090391" expanded="true" signature="111:1529" placeholder="..." />
+            <marker date="1467682090391" expanded="true" signature="371:778" placeholder="..." />
+            <marker date="1467682090391" expanded="true" signature="794:1159" placeholder="..." />
+            <marker date="1467682090391" expanded="true" signature="1175:1512" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_list_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1467681576221" expanded="true" signature="111:498" placeholder="..." />
+            <marker date="1467681576221" expanded="true" signature="268:480" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/RetrieveVideoInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.035564855">
+          <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+          <folding>
+            <marker date="1467761556790" expanded="false" signature="61:416" placeholder="..." />
+            <marker date="1467761556790" expanded="true" signature="418:512" placeholder="/**...*/" />
+            <marker date="1467761556790" expanded="true" signature="738:1963" placeholder="{...}" />
+            <marker date="1467761556790" expanded="false" signature="1995:2010" placeholder=" { " />
+            <marker date="1467761556790" expanded="false" signature="2019:2025" placeholder=" }" />
+            <marker date="1467761556790" expanded="false" signature="2088:2103" placeholder=" { " />
+            <marker date="1467761556790" expanded="false" signature="2115:2121" placeholder=" }" />
+            <marker date="1467761556790" expanded="false" signature="2242:2257" placeholder=" { " />
+            <marker date="1467761556790" expanded="false" signature="2284:2290" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/RoundedTransformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21338913">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <marker date="1466537684000" expanded="false" signature="61:288" placeholder="..." />
+            <marker date="1466537684000" expanded="true" signature="290:449" placeholder="//..." />
+            <marker date="1466537684000" expanded="true" signature="740:807" placeholder="{...}" />
+            <marker date="1466537684000" expanded="true" signature="872:1432" placeholder="{...}" />
+            <marker date="1466537684000" expanded="false" signature="1471:1482" placeholder=" { " />
+            <marker date="1466537684000" expanded="false" signature="1499:1505" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/MyCustomAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49790794">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1467761556918" expanded="false" signature="61:369" placeholder="..." />
+            <marker date="1467761556918" expanded="true" signature="371:413" placeholder="/**...*/" />
+            <marker date="1467761556918" expanded="true" signature="709:918" placeholder="{...}" />
+            <marker date="1467761556918" expanded="false" signature="960:971" placeholder=" { " />
+            <marker date="1467761556918" expanded="false" signature="1003:1009" placeholder=" }" />
+            <marker date="1467761556918" expanded="false" signature="1060:1071" placeholder=" { " />
+            <marker date="1467761556918" expanded="false" signature="1101:1107" placeholder=" }" />
+            <marker date="1467761556918" expanded="true" signature="1158:1249" placeholder="{...}" />
+            <marker date="1467761556918" expanded="true" signature="1282:1318" placeholder="{...}" />
+            <marker date="1467761556918" expanded="true" signature="1414:2976" placeholder="{...}" />
+            <marker date="1467761556918" expanded="false" signature="2177:2269" placeholder="(v) → {" />
+            <marker date="1467761556918" expanded="false" signature="2925:2940" placeholder="}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/UpdateViews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35983264">
+          <caret line="27" column="95" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="95" />
+          <folding>
+            <marker date="1468027682418" expanded="true" signature="61:442" placeholder="..." />
+            <marker date="1468027682418" expanded="true" signature="444:487" placeholder="/**...*/" />
+            <marker date="1468027682418" expanded="true" signature="687:2621" placeholder="{...}" />
+            <marker date="1468027682418" expanded="false" signature="2736:2751" placeholder=" { " />
+            <marker date="1468027682418" expanded="false" signature="2766:2772" placeholder=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/greenfishlabs/greenfishlabs/greenfishvr/SplashScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5920502">
+          <caret line="29" column="94" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="94" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -25,7 +25,7 @@ public class UpdateViews extends AsyncTask<Void, Void, Void> {
     @Override
     protected Void doInBackground(Void... voids) {
         try {
-            URL url = new URL("http://www.greenfishvr.com/updateViews.php");
+            URL url = new URL("http://ec2-54-84-102-152.compute-1.amazonaws.com/updateViews.php");
             conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Key", "Value");

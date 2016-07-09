@@ -27,7 +27,7 @@ public class SplashScreen extends Activity {
         //When calling RetrieveVideoInfo, you MUST set the context and url connection.
         rvi = new RetrieveVideoInfo();
         rvi.SetContext(SplashScreen.this);
-        rvi.SetUrlConnection("http://www.greenfishvr.com/fetchVideos.php");
+        rvi.SetUrlConnection("http://ec2-54-84-102-152.compute-1.amazonaws.com/fetchVideos.php");
         rvi.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         r.run();
     }
