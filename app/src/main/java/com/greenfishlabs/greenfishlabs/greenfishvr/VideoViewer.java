@@ -16,6 +16,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+<<<<<<< .merge_file_NkI4wU
+=======
+import android.widget.SeekBar;
+>>>>>>> .merge_file_zzqnqm
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -31,11 +35,23 @@ public class VideoViewer extends Activity {
     public static final int LOAD_VIDEO_STATUS_ERROR = 2;
     private int videoId = 0;
     private int loadVideoStatus = LOAD_VIDEO_STATUS_UNKNOWN;
+<<<<<<< .merge_file_NkI4wU
     public int getLoadVideoStatus() { return loadVideoStatus; }
+=======
+
+    public int getLoadVideoStatus() {
+        return loadVideoStatus;
+    }
+
+>>>>>>> .merge_file_zzqnqm
     private String fileUriString;
     private String videoDesc;
     public VrVideoView videoWidgetView;
     private boolean isPaused = false;
+<<<<<<< .merge_file_NkI4wU
+=======
+    private SeekBar seekbar;
+>>>>>>> .merge_file_zzqnqm
 
     private int videoViews;
     private boolean videoIsLoaded = false;
@@ -60,6 +76,11 @@ public class VideoViewer extends Activity {
         titleLabel = (TextView) findViewById(R.id.videoTitleLabel);
         viewsLabel = (TextView) findViewById(R.id.viewsCount);
         descriptionLabel = (TextView) findViewById(R.id.description);
+<<<<<<< .merge_file_NkI4wU
+=======
+        seekbar = (SeekBar)findViewById(R.id.seekBar);
+
+>>>>>>> .merge_file_zzqnqm
 
         Bundle b = getIntent().getExtras();
         if (b.getString("video_title") != null) {
@@ -74,7 +95,11 @@ public class VideoViewer extends Activity {
         videoViews = b.getInt("videoViews");
         viewsLabel.setText("Views: " + Integer.toString(b.getInt("videoViews")));
 
+<<<<<<< .merge_file_NkI4wU
         if(b.getString("videoDescription") != null) {
+=======
+        if (b.getString("videoDescription") != null) {
+>>>>>>> .merge_file_zzqnqm
             videoDesc = b.getString("videoDescription");
             descriptionLabel.setText(b.getString("videoDescription"));
         }
@@ -107,8 +132,13 @@ public class VideoViewer extends Activity {
         handleIntent(intent);
     }
 
+<<<<<<< .merge_file_NkI4wU
      // Load custom videos based on the Intent or load the default video. See the Javadoc for this
      // class for information on generating a custom intent via adb.
+=======
+    // Load custom videos based on the Intent or load the default video. See the Javadoc for this
+    // class for information on generating a custom intent via adb.
+>>>>>>> .merge_file_zzqnqm
     private void handleIntent(Intent intent) {
         // Determine if the Intent contains a file to load.
         if (Intent.ACTION_VIEW.equals(intent.getAction())) {
@@ -200,44 +230,102 @@ public class VideoViewer extends Activity {
             UpdateViews uv = new UpdateViews();
             uv.SetParameters(m);
             uv.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+<<<<<<< .merge_file_NkI4wU
             viewsLabel.setText("Views: " + Integer.toString(videoViews +1));
+=======
+            viewsLabel.setText("Views: " + Integer.toString(videoViews + 1));
+>>>>>>> .merge_file_zzqnqm
             playBtn.setVisibility(View.GONE);
         } else {
             Log.i(TAG, "Video not loaded");
         }
     }
 
+<<<<<<< .merge_file_NkI4wU
     public void GoBack (View view) {
+=======
+    public void GoBack(View view) {
+>>>>>>> .merge_file_zzqnqm
         videoWidgetView.pauseRendering();
         videoWidgetView.shutdown();
         finish();
     }
 
+<<<<<<< .merge_file_NkI4wU
     private class ActivityEventListener extends VrVideoEventListener  {
          // Called by video widget on the UI thread when it's done loading the video.
+=======
+    private class ActivityEventListener extends VrVideoEventListener {
+        // Called by video widget on the UI thread when it's done loading the video.
+>>>>>>> .merge_file_zzqnqm
         @Override
         public void onLoadSuccess() {
             Log.i(TAG, "Sucessfully loaded video " + videoWidgetView.getDuration());
             loadVideoStatus = LOAD_VIDEO_STATUS_SUCCESS;
+<<<<<<< .merge_file_NkI4wU
         }
 
          // Called by video widget on the UI thread on any asynchronous error.
+=======
+            seekbar.setMax((int)videoWidgetView.getDuration());
+            seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                    if(b) {
+                        seekbar.setProgress(i);
+                        videoWidgetView.seekTo(seekBar.getProgress());
+                    }
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                }
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                }
+            });
+            seekbar.postDelayed(onEverySecond, 1000);
+
+        }
+
+        // Called by video widget on the UI thread on any asynchronous error.
+>>>>>>> .merge_file_zzqnqm
         @Override
         public void onLoadError(String errorMessage) {
             // An error here is normally due to being unable to decode the video format.
             loadVideoStatus = LOAD_VIDEO_STATUS_ERROR;
             Log.e(TAG, "Error loading video: " + errorMessage);
+<<<<<<< .merge_file_NkI4wU
+=======
+
+>>>>>>> .merge_file_zzqnqm
         }
 
         @Override
         public void onClick() {
+<<<<<<< .merge_file_NkI4wU
             togglePause();
+=======
+
+            togglePause();
+            if(!isPaused)
+            {
+                seekbar.postDelayed(onEverySecond, 1000);
+            }
+>>>>>>> .merge_file_zzqnqm
         }
 
         // Update the UI every frame.
         @Override
         public void onNewFrame() {
 
+<<<<<<< .merge_file_NkI4wU
+=======
+
+>>>>>>> .merge_file_zzqnqm
         }
 
         // Make the video play in a loop. This method could also be used to move to the next video in
@@ -248,6 +336,25 @@ public class VideoViewer extends Activity {
         }
     }
 
+<<<<<<< .merge_file_NkI4wU
+=======
+    private Runnable onEverySecond=new Runnable() {
+
+        @Override
+        public void run() {
+
+            if(seekbar != null) {
+                seekbar.setProgress((int)videoWidgetView.getCurrentPosition());
+            }
+
+            if(!isPaused) {
+                seekbar.postDelayed(onEverySecond, 1000);
+            }
+
+        }
+    };
+
+>>>>>>> .merge_file_zzqnqm
     public void ShareToFacebook(View view) {
         Log.d("ShareButton", "Pressed");
         ShareDialog sd = new ShareDialog(this);
@@ -255,6 +362,12 @@ public class VideoViewer extends Activity {
         ShareLinkContent slc = new ShareLinkContent.Builder().setContentDescription(videoDesc)
                 .setContentTitle(videoTitle).setQuote("View now on the Greenfish VR app.")
                 .setContentUrl(Uri.parse(fileUriString)).setImageUrl(Uri.parse(imageUrl)).build();
+<<<<<<< .merge_file_NkI4wU
         sd.show(slc );
     }
 }
+=======
+        sd.show(slc);
+    }
+}
+>>>>>>> .merge_file_zzqnqm
