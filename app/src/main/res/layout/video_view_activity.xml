@@ -146,7 +146,8 @@
         android:text="Share To Facebook"
         android:id="@+id/shareButton"
         android:layout_gravity="center_horizontal"
-        android:onClick="ShareToFacebook" />
+        android:onClick="ShareToFacebook"
+        android:visibility="invisible" />
 
 
 </LinearLayout>
