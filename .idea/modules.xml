@@ -5,13 +5,18 @@
       <module fileurl="file://$PROJECT_DIR$/GreenfishVR-Android.iml" filepath="$PROJECT_DIR$/GreenfishVR-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/audio/audio.iml" filepath="$PROJECT_DIR$/audio/audio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/audio/audio.iml" filepath="$PROJECT_DIR$/audio/audio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commonwidget/commonwidget.iml" filepath="$PROJECT_DIR$/commonwidget/commonwidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/commonwidget/commonwidget.iml" filepath="$PROJECT_DIR$/commonwidget/commonwidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/facebook-android-sdk-4.13.1/facebook-android-sdk-4.13.1.iml" filepath="$PROJECT_DIR$/facebook-android-sdk-4.13.1/facebook-android-sdk-4.13.1.iml" />
       <module fileurl="file://$PROJECT_DIR$/gvr-android-sdk-master/gvr-android-sdk-master.iml" filepath="$PROJECT_DIR$/gvr-android-sdk-master/gvr-android-sdk-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/picasso-2.5.2/picasso-2.5.2.iml" filepath="$PROJECT_DIR$/picasso-2.5.2/picasso-2.5.2.iml" />
       <module fileurl="file://$PROJECT_DIR$/twitter4j-core-4.0.4/twitter4j-core-4.0.4.iml" filepath="$PROJECT_DIR$/twitter4j-core-4.0.4/twitter4j-core-4.0.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/videowidget/videowidget.iml" filepath="$PROJECT_DIR$/videowidget/videowidget.iml" />
       <module fileurl="file://$PROJECT_DIR$/videowidget/videowidget.iml" filepath="$PROJECT_DIR$/videowidget/videowidget.iml" />
     </modules>
   </component>
