@@ -101,7 +101,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/textContainer"
-                android:layout_below="@+id/videoContainer">
+                android:layout_below="@+id/videoContainer"
+                android:weightSum="1">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -117,7 +118,7 @@
                     android:paddingBottom="10dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="212dp"
                     android:layout_height="wrap_content"
                     android:text="Views: 1,000"
                     android:id="@+id/viewsCount"
@@ -125,7 +126,13 @@
                     android:paddingLeft="@dimen/video_page_text_padding"
                     android:layout_marginTop="10dp"
                     android:textColor="#000"
-                    android:visibility="gone" />
+                    android:visibility="gone"
+                    android:layout_weight="0.87" />
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar" />
 
                 <TextView
                     android:layout_width="wrap_content"
