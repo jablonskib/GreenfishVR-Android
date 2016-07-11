@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,6 +62,7 @@ public class MyCustomAdapter extends BaseAdapter {
             holder = new Holder();
             convertView = inflater.inflate(R.layout.custom_list_layout, parent, false);
             holder.imageView = (ImageView) convertView.findViewById(R.id.redirect_btn);
+
             convertView.setTag(holder);
         } else {
             holder = (Holder)convertView.getTag();

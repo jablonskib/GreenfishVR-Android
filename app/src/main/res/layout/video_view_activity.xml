@@ -118,6 +118,13 @@
                     android:paddingBottom="10dp" />
 
                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="00:00/00:00"
+                    android:id="@+id/timestampText" />
+
+                <TextView
                     android:layout_width="212dp"
                     android:layout_height="wrap_content"
                     android:text="Views: 1,000"

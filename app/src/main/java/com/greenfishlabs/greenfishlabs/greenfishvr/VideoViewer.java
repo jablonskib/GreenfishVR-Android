@@ -122,7 +122,6 @@ public class VideoViewer extends Activity {
         // Determine if the Intent contains a file to load.
         if (Intent.ACTION_VIEW.equals(intent.getAction())) {
             Log.i(TAG, "ACTION_VIEW Intent received");
-
             if (fileUriString == null) {
                 Log.w(TAG, "No data uri specified. Use \"-d /path/filename\".");
             } else {
@@ -282,16 +281,29 @@ public class VideoViewer extends Activity {
     }
 
     private Runnable onEverySecond=new Runnable() {
-
         @Override
         public void run() {
-
             if(seekbar != null) {
                 seekbar.setProgress((int)videoWidgetView.getCurrentPosition());
+                TextView timestampText = (TextView) findViewById(R.id.timestampText);
+
+                int currentPos = (int) videoWidgetView.getCurrentPosition();
+                int currentPosMin = currentPos / 1000 / 60;
+                int currentPosSec = (currentPos - (60000*currentPosMin))/1000;
+
+                int videoDuration = (int)videoWidgetView.getDuration();
+                int videoDurationMin = videoDuration / 1000 / 60;
+                int videoDurationSec = (videoDuration - (60000*videoDurationMin))/1000;
+
+                if (currentPosSec < 10) {
+                    timestampText.setText(currentPosMin + ":0" + currentPosSec + "/" + videoDurationMin + ":" + videoDurationSec);
+                } else {
+                    timestampText.setText(currentPosMin + ":" + currentPosSec + "/" + videoDurationMin + ":" + videoDurationSec);
+                }
             }
 
             if(!isPaused) {
-                seekbar.postDelayed(onEverySecond, 1000);
+                seekbar.postDelayed(onEverySecond, 50);
             }
 
         }
