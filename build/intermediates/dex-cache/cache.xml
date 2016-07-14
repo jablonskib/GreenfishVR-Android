@@ -26,7 +26,7 @@
         jar="/Users/DeathStar/Desktop/GreenfishVR-Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="fb9782068f02a7080db1e6433c0e87ece647f6aa">
+        sha1="e61cf9662df3172df7722e0bc00709024d36ae69">
         <dex dex="/Users/DeathStar/Desktop/GreenfishVR-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ad8bae40abd96614829ef20a7f7a9f756500ac36/classes.dex" />
     </item>
     <item
@@ -54,7 +54,7 @@
         jar="/Users/DeathStar/Desktop/GreenfishVR-Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="a4b60bb33c3ec65fc4beb47f5973b6eabfc49721">
+        sha1="60ad2ba8f6a8c9dcd76ef23b09558db83691dc44">
         <dex dex="/Users/DeathStar/Desktop/GreenfishVR-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_0f312fc8cf0fd769aae27a0c00aa6a9d20bb3af9/classes.dex" />
     </item>
     <item
