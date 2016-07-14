@@ -40,14 +40,14 @@ public class VideoViewer extends Activity {
     private String fileUriString;
     private String videoDesc;
     public VrVideoView videoWidgetView;
-    private boolean isPaused = false;
+    private boolean isPaused = false, isPlaying = false;
     private SeekBar seekbar;
 
     private int videoViews;
     private boolean videoIsLoaded = false;
-    public String videoTitle;
+    public String videoTitle, videoAuthor;
     public String imageUrl;
-    private TextView titleLabel, viewsLabel, descriptionLabel;
+    private TextView titleLabel, authorLabel, viewsLabel, descriptionLabel;
 
     static {
         //System.loadLibrary("gvr");
@@ -64,6 +64,7 @@ public class VideoViewer extends Activity {
         videoWidgetView = (VrVideoView) findViewById(R.id.vrViewer);
         videoWidgetView.setEventListener(new ActivityEventListener());
         titleLabel = (TextView) findViewById(R.id.videoTitleLabel);
+        authorLabel = (TextView) findViewById(R.id.videoAuthorLabel);
         viewsLabel = (TextView) findViewById(R.id.viewsCount);
         descriptionLabel = (TextView) findViewById(R.id.description);
         seekbar = (SeekBar)findViewById(R.id.seekBar);
@@ -72,19 +73,40 @@ public class VideoViewer extends Activity {
         if (b.getString("video_title") != null) {
             videoTitle = b.getString("video_title").toLowerCase();
             titleLabel.setText(b.getString("video_title"));
+        } else {
+            Log.d(TAG, "Video title not found");
+        }
+
+        if (b.getString("video_author") != null) {
+            videoAuthor = b.getString("video_author").toLowerCase();
+            authorLabel.setText(b.getString("video_author"));
+        } else {
+            authorLabel.setVisibility(View.GONE);
+            Log.d(TAG, "Video author not found");
         }
 
         if (b.getString("videoUrl") != null) {
             fileUriString = b.getString("videoUrl");
+        } else {
+            Log.d(TAG, "Video url not found");
         }
 
-        videoViews = b.getInt("videoViews");
-        viewsLabel.setText("Views: " + Integer.toString(b.getInt("videoViews")));
+        if (b.getInt("videoViews") != 0) {
+            videoViews = b.getInt("videoViews");
+            viewsLabel.setText("Views: " + Integer.toString(b.getInt("videoViews")));
+        } else {
+            videoViews = 0;
+            viewsLabel.setText("Views: " + 0);
+        }
 
         if (b.getString("videoDescription") != null) {
             videoDesc = b.getString("videoDescription");
             descriptionLabel.setText(b.getString("videoDescription"));
+        } else {
+            Log.d(TAG, "Video description not found");
         }
+
+
 
         if (b.getString("imageUrl") != null) {
             imageUrl = b.getString("imageUrl");
@@ -182,12 +204,29 @@ public class VideoViewer extends Activity {
             videoWidgetView.pauseVideo();
         }
         isPaused = !isPaused;
+        isPlaying = !isPlaying;
     }
 
     // Play button pressed
     public void PlayVideo(View view) {
+        TextView playBtn = (TextView) findViewById(R.id.playBtn);
+        if (!isPlaying && !isPaused) {
+            StartVideo();
+            playBtn.setText("PAUSE");
+        } else {
+            togglePause();
+            if (!isPlaying && isPaused) {
+                playBtn.setText("PLAY");
+            } else if (isPlaying && !isPaused) {
+                playBtn.setText("PAUSE");
+            } else {
+                playBtn.setText("PLAY");
+            }
+        }
+    }
+
+    void StartVideo () {
         // Grab play button object
-        ImageButton playBtn = (ImageButton) findViewById(R.id.playIcon);
         ImageView previewImage = (ImageView) findViewById(R.id.previewImage);
 
         previewImage.setVisibility(View.GONE);
@@ -209,7 +248,8 @@ public class VideoViewer extends Activity {
             uv.SetParameters(m);
             uv.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
             viewsLabel.setText("Views: " + Integer.toString(videoViews + 1));
-            playBtn.setVisibility(View.GONE);
+
+            isPlaying = true;
         } else {
             Log.i(TAG, "Video not loaded");
         }

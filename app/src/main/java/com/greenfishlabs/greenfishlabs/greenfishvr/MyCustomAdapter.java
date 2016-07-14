@@ -61,6 +61,7 @@ public class MyCustomAdapter extends BaseAdapter {
             Log.d("ConvertView called", "true");
             holder = new Holder();
             convertView = inflater.inflate(R.layout.custom_list_layout, parent, false);
+
             holder.imageView = (ImageView) convertView.findViewById(R.id.redirect_btn);
 
             convertView.setTag(holder);
@@ -77,6 +78,7 @@ public class MyCustomAdapter extends BaseAdapter {
             public void onClick(View v) {
                 Intent intent = new Intent(activity, VideoViewer.class);
                 intent.putExtra("video_title", listOfVrVideoInfo[position].GetTitle());
+                intent.putExtra("video_author", listOfVrVideoInfo[position].GetAuthor());
                 intent.putExtra("videoUrl", listOfVrVideoInfo[position].GetURL());
                 intent.putExtra("videoViews", listOfVrVideoInfo[position].GetCount());
                 intent.putExtra("videoDescription", listOfVrVideoInfo[position].GetDescription());

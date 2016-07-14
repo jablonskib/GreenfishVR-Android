@@ -44,19 +44,6 @@
                     android:onClick="GoBack"
                     android:visibility="gone" />
 
-                <TextView
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
-                    android:maxHeight="90dp"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="Back"
-                    android:id="@+id/backButton"
-                    android:layout_gravity="center_vertical|left"
-                    android:onClick="GoBack"
-                    android:textColor="#fff"
-                    android:paddingTop="14dp"
-                    android:paddingLeft="8dp"
-                    android:layout_marginLeft="12dp" />
             </FrameLayout>
 
             <FrameLayout
@@ -67,7 +54,7 @@
 
                 <ImageView
                     android:layout_width="fill_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:id="@+id/previewImage"
                     android:background="#b0b0b0"
                     android:visibility="visible"
@@ -75,7 +62,7 @@
 
                 <com.google.vr.sdk.widgets.video.VrVideoView
                     android:layout_width="fill_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="200dp"
                     android:id="@+id/vrViewer"
                     android:layout_gravity="center_horizontal"
                     android:visibility="gone" />
@@ -86,7 +73,7 @@
                     android:id="@+id/playIcon"
                     android:src="@drawable/play_icon"
                     android:adjustViewBounds="true"
-                    android:visibility="visible"
+                    android:visibility="gone"
                     android:layout_gravity="center"
                     android:padding="60dp"
                     android:scaleType="centerInside"
@@ -105,24 +92,17 @@
                 android:weightSum="1">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sample Video Title"
-                    android:id="@+id/videoTitleLabel"
-                    android:layout_gravity="left"
-                    android:textSize="25dp"
-                    android:background="#000"
-                    android:textAlignment="center"
-                    android:textColor="#fff"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp" />
-
-                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceSmall"
                     android:text="00:00/00:00"
-                    android:id="@+id/timestampText" />
+                    android:id="@+id/timestampText"
+                    android:paddingLeft="@dimen/video_page_text_padding" />
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBar" />
 
                 <TextView
                     android:layout_width="212dp"
@@ -136,19 +116,77 @@
                     android:visibility="gone"
                     android:layout_weight="0.87" />
 
-                <SeekBar
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/seekBar" />
+                    android:text="Sample Video Title"
+                    android:id="@+id/videoTitleLabel"
+                    android:textSize="16dp"
+                    android:textColor="#000"
+                    android:paddingLeft="@dimen/video_page_text_padding"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sample Video Author"
+                    android:id="@+id/videoAuthorLabel"
+                    android:textSize="12dp"
+                    android:textColor="#000"
+                    android:paddingLeft="@dimen/video_page_text_padding"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/lipsum_one_para"
                     android:id="@+id/description"
-                    android:padding="@dimen/video_page_text_padding"
                     android:layout_gravity="left|bottom"
-                    android:textColor="#000" />
+                    android:textColor="#000"
+                    android:paddingLeft="@dimen/video_page_text_padding"
+                    android:paddingRight="@dimen/video_page_text_padding"
+                    android:paddingBottom="@dimen/video_page_text_padding" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="90dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="PLAY"
+                    android:id="@+id/playBtn"
+                    android:layout_gravity="center"
+                    android:onClick="PlayVideo"
+                    android:textColor="#000"
+                    android:background="@drawable/back_button_shape"
+                    android:singleLine="false"
+                    android:minWidth="90dp"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="MENU"
+                    android:id="@+id/backButton"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:onClick="GoBack"
+                    android:textColor="#000"
+                    android:background="@drawable/back_button_shape"
+                    android:singleLine="false"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="10dp" />
+
             </LinearLayout>
 
         </RelativeLayout>

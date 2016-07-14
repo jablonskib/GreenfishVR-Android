@@ -2,34 +2,6 @@
 <items version="2" >
 
     <item
-        jar="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_7dabb45f403642985d5c4a65be4e82b27e3673e5/classes.dex" />
-    </item>
-    <item
-        jar="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="d5f4688279b9811688e7001bdbe07cfa0628f031">
-        <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_428f9629dd7057c27aa5ba086d0e8c1937e92448/classes.dex" />
-    </item>
-    <item
-        jar="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
-        <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.0.0_cae5cc9386547acd34ef4baeb938fc2229e7fceb/classes.dex" />
-    </item>
-    <item
-        jar="/Users/DeathStar/Desktop/Greenfish VR/app/libs/picasso-2.5.2.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/2/picasso-2.5.2_a6dc839bf34f8a470a760bd27103e5f9101a43b7/classes.dex" />
-    </item>
-    <item
         jar="/Users/DeathStar/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
         jumboMode="true"
         revision="23.0.3"
@@ -44,10 +16,17 @@
         <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_d02b426fc57b3c324c84b873c93073a4828edede/classes.dex" />
     </item>
     <item
+        jar="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_7dabb45f403642985d5c4a65be4e82b27e3673e5/classes.dex" />
+    </item>
+    <item
         jar="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="3cc47405adfc45738fb6c3c248edaa14eba60e8b">
+        sha1="03aec820aaf38313d0fb004a9562b19d20c84c20">
         <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_72bcd33c7adec7e62bf999e5a2bbba1ba9112755/classes.dex" />
     </item>
     <item
@@ -56,6 +35,20 @@
         revision="23.0.3"
         sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
         <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_fffcad1085c8523d6c604ba4db9820a947bc0b08/classes.dex" />
+    </item>
+    <item
+        jar="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ab17bd2a364f94b7a5e10db11a63d1836dde70bb">
+        <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_428f9629dd7057c27aa5ba086d0e8c1937e92448/classes.dex" />
+    </item>
+    <item
+        jar="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
+        <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.0.0_cae5cc9386547acd34ef4baeb938fc2229e7fceb/classes.dex" />
     </item>
     <item
         jar="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/exploded-aar/pl.droidsonroids.gif/android-gif-drawable/1.1.17/jars/classes.jar"
@@ -77,6 +70,13 @@
         revision="23.0.3"
         sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
         <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_177cae4d322cb70c65d65161f5a62bec1d272ed7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/DeathStar/Desktop/Greenfish VR/app/libs/picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/transforms/dex/debug/folders/1000/2/picasso-2.5.2_a6dc839bf34f8a470a760bd27103e5f9101a43b7/classes.dex" />
     </item>
     <item
         jar="/Users/DeathStar/Desktop/Greenfish VR/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"

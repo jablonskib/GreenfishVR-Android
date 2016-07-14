@@ -1,6 +1,7 @@
 package com.greenfishlabs.greenfishlabs.greenfishvr;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.vr.sdk.widgets.video.VrVideoView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -81,6 +84,7 @@ public class MenuActivity extends Activity {
                         videoDataArrayList.add(
                             new VrVideoInfo(
                                     videoDataJSON.getJSONObject(i).getString("title"),
+                                    videoDataJSON.getJSONObject(i).getString("videoAuthor"),
                                     videoDataJSON.getJSONObject(i).getString("description"),
                                     videoDataJSON.getJSONObject(i).getString("url"),
                                     videoDataJSON.getJSONObject(i).getInt("views"),

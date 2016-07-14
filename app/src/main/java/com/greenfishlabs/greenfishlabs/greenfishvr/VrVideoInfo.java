@@ -9,12 +9,13 @@ import android.os.Parcelable;
  */
 public class VrVideoInfo implements Parcelable
 {
-    private String videoTitle, videoDescription, videoURL, videoImageURL;
+    private String videoTitle, videoAuthor, videoDescription, videoURL, videoImageURL;
     private int viewCount, videoId;
 
     @Override
     public void writeToParcel(Parcel out, int flags) {
         out.writeString(videoTitle);
+        out.writeString(videoAuthor);
         out.writeString(videoDescription);
         out.writeString(videoURL);
         out.writeInt(viewCount);
@@ -41,6 +42,7 @@ public class VrVideoInfo implements Parcelable
 
     private VrVideoInfo(Parcel in) {
         videoTitle = in.readString();
+        videoAuthor = in.readString();
         videoDescription = in.readString();
         videoURL = in.readString();
         viewCount = in.readInt();
@@ -49,15 +51,24 @@ public class VrVideoInfo implements Parcelable
     }
 
     //Default constructor.
-    public VrVideoInfo( String title, String description, String url, int count, int vId, String vImgURL) {
+    public VrVideoInfo( String title, String author, String description, String url, int count, int vId, String vImgURL) {
+        videoTitle = title;
+        videoAuthor = author;
+        videoDescription = description;
+        videoURL = url;
+        viewCount = count;
+        videoId = vId;
+        videoImageURL = vImgURL;
+    }
 
+    // Constructor w/ no Author
+    public VrVideoInfo( String title, String description, String url, int count, int vId, String vImgURL) {
         videoTitle = title;
         videoDescription = description;
         videoURL = url;
         viewCount = count;
         videoId = vId;
         videoImageURL = vImgURL;
-
     }
 
     /*
@@ -69,6 +80,10 @@ public class VrVideoInfo implements Parcelable
 
     public String GetTitle() {
         return videoTitle;
+    }
+
+    public String GetAuthor() {
+        return videoAuthor;
     }
 
     public String GetDescription() {
