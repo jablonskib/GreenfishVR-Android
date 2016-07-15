@@ -46,7 +46,7 @@ public class SplashScreen extends Activity {
                 for(int i = 0; i < videoDataJSON.length(); i++) {
                     try {
                         videoDataArrayList.add(new VrVideoInfo(videoDataJSON.getJSONObject(i).getString("title"),
-                                //videoDataJSON.getJSONObject(i).getString("videoAuthor"),
+                                videoDataJSON.getJSONObject(i).getString("videoAuthor"),
                                 videoDataJSON.getJSONObject(i).getString("description"),
                                 videoDataJSON.getJSONObject(i).getString("url"),
                                 videoDataJSON.getJSONObject(i).getInt("views"),
