@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="videowidget-unspecified">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/GreenfishVR/videowidget/unspecified/res" />
-      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/GreenfishVR/videowidget/unspecified/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/Greenfish VR/videowidget/unspecified/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/Greenfish VR/videowidget/unspecified/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

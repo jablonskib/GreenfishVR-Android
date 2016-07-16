@@ -21,6 +21,8 @@ import android.widget.TextView;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
 public class VideoViewer extends Activity {
 
     private static final String TAG = MenuActivity.class.getSimpleName();
@@ -47,7 +49,8 @@ public class VideoViewer extends Activity {
     private boolean videoIsLoaded = false;
     public String videoTitle, videoAuthor;
     public String imageUrl;
-    private TextView titleLabel, authorLabel, viewsLabel, descriptionLabel;
+    private TextView titleLabel, authorLabel, viewsLabel, descriptionLabel, playBtn;
+
 
     static {
         //System.loadLibrary("gvr");
@@ -68,6 +71,7 @@ public class VideoViewer extends Activity {
         viewsLabel = (TextView) findViewById(R.id.viewsCount);
         descriptionLabel = (TextView) findViewById(R.id.description);
         seekbar = (SeekBar)findViewById(R.id.seekBar);
+        playBtn = (TextView) findViewById(R.id.playBtn);
 
         Bundle b = getIntent().getExtras();
         if (b.getString("video_title") != null) {
@@ -205,6 +209,15 @@ public class VideoViewer extends Activity {
         }
         isPaused = !isPaused;
         isPlaying = !isPlaying;
+
+        if (!isPlaying && isPaused) {
+            playBtn.setText("PLAY");
+        } else if (isPlaying && !isPaused) {
+            playBtn.setText("PAUSE");
+            seekbar.postDelayed(onEverySecond, 1000);
+        } else {
+            playBtn.setText("PLAY");
+        }
     }
 
     // Play button pressed
@@ -215,13 +228,6 @@ public class VideoViewer extends Activity {
             playBtn.setText("PAUSE");
         } else {
             togglePause();
-            if (!isPlaying && isPaused) {
-                playBtn.setText("PLAY");
-            } else if (isPlaying && !isPaused) {
-                playBtn.setText("PAUSE");
-            } else {
-                playBtn.setText("PLAY");
-            }
         }
     }
 
@@ -328,22 +334,23 @@ public class VideoViewer extends Activity {
                 TextView timestampText = (TextView) findViewById(R.id.timestampText);
 
                 int currentPos = (int) videoWidgetView.getCurrentPosition();
-                int currentPosMin = currentPos / 1000 / 60;
-                int currentPosSec = (currentPos - (60000*currentPosMin))/1000;
-
                 int videoDuration = (int)videoWidgetView.getDuration();
-                int videoDurationMin = videoDuration / 1000 / 60;
-                int videoDurationSec = (videoDuration - (60000*videoDurationMin))/1000;
 
-                if (currentPosSec < 10) {
-                    timestampText.setText(currentPosMin + ":0" + currentPosSec + "/" + videoDurationMin + ":" + videoDurationSec);
-                } else {
-                    timestampText.setText(currentPosMin + ":" + currentPosSec + "/" + videoDurationMin + ":" + videoDurationSec);
-                }
+                String currentTime = String.format("%02d:%02d",
+                        TimeUnit.MILLISECONDS.toMinutes(currentPos),
+                        TimeUnit.MILLISECONDS.toSeconds(currentPos) -
+                                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(currentPos)));
+
+                String videoLength = String.format("%02d:%02d",
+                        TimeUnit.MILLISECONDS.toMinutes(videoDuration),
+                        TimeUnit.MILLISECONDS.toSeconds(videoDuration) -
+                                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(videoDuration)));
+
+                timestampText.setText(currentTime + "/" + videoLength);
             }
 
             if(!isPaused) {
-                seekbar.postDelayed(onEverySecond, 50);
+                seekbar.postDelayed(onEverySecond, 200);
             }
 
         }
