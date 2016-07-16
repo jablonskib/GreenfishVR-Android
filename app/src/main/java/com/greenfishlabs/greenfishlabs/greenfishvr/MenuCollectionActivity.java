@@ -55,6 +55,9 @@ public class MenuCollectionActivity extends Activity {
         rvi = new RetrieveVideoInfo();
         rvi.SetContext(MenuCollectionActivity.this);
         rvi.SetUrlConnection("http://www.greenfishvr.com/fetch" + b.getString("videoCollectionTitle") + "Videos.php");
+        rvi = new RetrieveVideoInfo();
+        rvi.SetContext(MenuCollectionActivity.this);
+        rvi.SetUrlConnection("http://www.greenfishvr.com/fetchVideos.php"); // TODO: Change to new php file for grabbing collection data
         rvi.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         r.run();
     }
