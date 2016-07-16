@@ -41,7 +41,17 @@ public class MenuCollectionActivity extends Activity {
         lView = (ListView) findViewById(R.id.list_container);
         loadingError = (TextView) findViewById(R.id.loading_error);
 
-        onServerRetry(null); // grab data for this collection
+        Bundle b = getIntent().getExtras();
+
+        if (b.getString("videoCollectionTitle") != null) {
+            rvi = new RetrieveVideoInfo();
+            rvi.SetContext(MenuCollectionActivity.this);
+            rvi.SetUrlConnection("http://www.greenfishvr.com/fetch" + b.getString("videoCollectionTitle") + "Videos.php"); // TODO: Change to new php file url for grabbing collection data
+            rvi.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+            r.run();
+        } else {
+
+        }
 
         //handle listview and assign adapter
         lView = (ListView) findViewById(R.id.list_container);
@@ -54,10 +64,7 @@ public class MenuCollectionActivity extends Activity {
 
         rvi = new RetrieveVideoInfo();
         rvi.SetContext(MenuCollectionActivity.this);
-        rvi.SetUrlConnection("http://www.greenfishvr.com/fetch" + b.getString("videoCollectionTitle") + "Videos.php");
-        rvi = new RetrieveVideoInfo();
-        rvi.SetContext(MenuCollectionActivity.this);
-        rvi.SetUrlConnection("http://www.greenfishvr.com/fetchVideos.php"); // TODO: Change to new php file for grabbing collection data
+        rvi.SetUrlConnection("http://www.greenfishvr.com/fetch" + b.getString("videoCollectionTitle") + "Videos.php"); // TODO: Change to new php file url for grabbing collection data
         rvi.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         r.run();
     }
