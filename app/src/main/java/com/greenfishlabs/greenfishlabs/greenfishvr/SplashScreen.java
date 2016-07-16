@@ -51,7 +51,10 @@ public class SplashScreen extends Activity {
                                 videoDataJSON.getJSONObject(i).getString("url"),
                                 videoDataJSON.getJSONObject(i).getInt("views"),
                                 videoDataJSON.getJSONObject(i).getInt("id"),
-                                videoDataJSON.getJSONObject(i).getString("imageUrl")));
+                                videoDataJSON.getJSONObject(i).getString("imageUrl")
+                                //videoDataJSON.getJSONObject(i).getString("collectionTitle")
+                        )
+                        );
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

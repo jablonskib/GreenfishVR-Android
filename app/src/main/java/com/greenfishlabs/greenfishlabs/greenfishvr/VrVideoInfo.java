@@ -9,7 +9,7 @@ import android.os.Parcelable;
  */
 public class VrVideoInfo implements Parcelable
 {
-    private String videoTitle, videoAuthor, videoDescription, videoURL, videoImageURL;
+    private String videoTitle, videoAuthor, videoDescription, videoURL, videoImageURL, videoCollectionTitle;
     private int viewCount, videoId;
 
     @Override
@@ -21,6 +21,7 @@ public class VrVideoInfo implements Parcelable
         out.writeInt(viewCount);
         out.writeInt(videoId);
         out.writeString(videoImageURL);
+        out.writeString(videoCollectionTitle);
     }
 
     public static final Parcelable.Creator<VrVideoInfo> CREATOR
@@ -48,10 +49,11 @@ public class VrVideoInfo implements Parcelable
         viewCount = in.readInt();
         videoId = in.readInt();
         videoImageURL = in.readString();
+        videoCollectionTitle = in.readString();
     }
 
     //Default constructor.
-    public VrVideoInfo( String title, String author, String description, String url, int count, int vId, String vImgURL) {
+    public VrVideoInfo( String title, String author, String description, String url, int count, int vId, String vImgURL, String collectionTitle) {
         videoTitle = title;
         videoAuthor = author;
         videoDescription = description;
@@ -59,11 +61,13 @@ public class VrVideoInfo implements Parcelable
         viewCount = count;
         videoId = vId;
         videoImageURL = vImgURL;
+        videoCollectionTitle = collectionTitle;
     }
 
-    // Constructor w/ no Author
-    public VrVideoInfo( String title, String description, String url, int count, int vId, String vImgURL) {
+    // Constructor w/ no collection field
+    public VrVideoInfo( String title, String author, String description, String url, int count, int vId, String vImgURL) {
         videoTitle = title;
+        videoAuthor = author;
         videoDescription = description;
         videoURL = url;
         viewCount = count;
@@ -103,6 +107,11 @@ public class VrVideoInfo implements Parcelable
     {
         return videoId;
     }
+
+    public String GetCollectionTitle() {
+        return videoCollectionTitle;
+    }
+
     @Override
     public int describeContents()
     {

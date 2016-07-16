@@ -10,5 +10,4 @@
         android:longClickable="false"
         android:background="@drawable/button_shape" />
 
-
 </LinearLayout>
