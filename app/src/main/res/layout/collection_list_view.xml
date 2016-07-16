@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout tools:context=".MenuActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splash" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"
+        android:scrollIndicators="right"
+        android:smoothScrollbar="true"
+        android:scrollingCache="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="@dimen/top_bar_height"
+        android:clipToPadding="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_error"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:onClick="onServerRetry"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/top_bar_height"
+        android:scaleType="centerInside"
+        android:padding="@dimen/top_bar_logo_padding"
+        android:background="@color/background_gray_transparent" />
+</RelativeLayout>

@@ -69,24 +69,38 @@ public class MyCustomAdapter extends BaseAdapter {
             holder = (Holder)convertView.getTag();
         }
 
+        //int buttonWidth = convertView.getWidth();
+        //int buttonHeight = convertView.getHeight();
+
         // Inject preview image into each button
         Picasso.with(context).load(listOfVrVideoInfo[position].GetImageURl()).fit().transform(new RoundedTransformation(2, 0)).into(holder.imageView);
 
         // Passes video info to video info activity that is being loaded
-        holder.imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(activity, VideoViewer.class);
-                intent.putExtra("video_title", listOfVrVideoInfo[position].GetTitle());
-                intent.putExtra("video_author", listOfVrVideoInfo[position].GetAuthor());
-                intent.putExtra("videoUrl", listOfVrVideoInfo[position].GetURL());
-                intent.putExtra("videoViews", listOfVrVideoInfo[position].GetCount());
-                intent.putExtra("videoDescription", listOfVrVideoInfo[position].GetDescription());
-                intent.putExtra("videoId", listOfVrVideoInfo[position].GetID());
-                intent.putExtra("imageUrl", listOfVrVideoInfo[position].GetImageURl());
-                activity.startActivity(intent);
-            }
-        });
+        if (listOfVrVideoInfo[position].GetCollectionTitle() != null) {
+            holder.imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(activity, MenuCollectionActivity.class);
+                    intent.putExtra("videoCollectionTitle", listOfVrVideoInfo[position].GetCollectionTitle());
+                    activity.startActivity(intent);
+                }
+            });
+        } else {
+            holder.imageView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(activity, VideoViewer.class);
+                    intent.putExtra("video_title", listOfVrVideoInfo[position].GetTitle());
+                    intent.putExtra("video_author", listOfVrVideoInfo[position].GetAuthor());
+                    intent.putExtra("videoUrl", listOfVrVideoInfo[position].GetURL());
+                    intent.putExtra("videoViews", listOfVrVideoInfo[position].GetCount());
+                    intent.putExtra("videoDescription", listOfVrVideoInfo[position].GetDescription());
+                    intent.putExtra("videoId", listOfVrVideoInfo[position].GetID());
+                    intent.putExtra("imageUrl", listOfVrVideoInfo[position].GetImageURl());
+                    activity.startActivity(intent);
+                }
+            });
+        }
         return convertView;
     }
 }

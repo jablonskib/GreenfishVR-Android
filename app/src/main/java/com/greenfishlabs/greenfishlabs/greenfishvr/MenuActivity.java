@@ -90,6 +90,7 @@ public class MenuActivity extends Activity {
                                     videoDataJSON.getJSONObject(i).getInt("views"),
                                     videoDataJSON.getJSONObject(i).getInt("id"),
                                     videoDataJSON.getJSONObject(i).getString("imageUrl")
+                                    //videoDataJSON.getJSONObject(i).getString("collectionTitle")
                             )
                         );
                     } catch (JSONException e) {

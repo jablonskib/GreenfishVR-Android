@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:facebook="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -199,7 +199,7 @@
         android:id="@+id/shareButton"
         android:layout_gravity="center_horizontal"
         android:onClick="ShareToFacebook"
-        android:visibility="invisible" />
+        android:visibility="gone" />
 
 
-</LinearLayout>
+</RelativeLayout>
