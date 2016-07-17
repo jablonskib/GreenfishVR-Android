@@ -33,7 +33,8 @@
         android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
         <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.MenuActivity"
             android:screenOrientation="portrait" />
-
+        <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.MenuCollectionActivity"
+            android:screenOrientation="portrait" />
         <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.VideoViewer"
             android:screenOrientation="portrait" />
 

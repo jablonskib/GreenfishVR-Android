@@ -73,6 +73,7 @@ public class VrVideoInfo implements Parcelable
         viewCount = count;
         videoId = vId;
         videoImageURL = vImgURL;
+        videoCollectionTitle = "null";
     }
 
     /*

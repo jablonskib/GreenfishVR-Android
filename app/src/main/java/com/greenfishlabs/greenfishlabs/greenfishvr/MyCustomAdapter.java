@@ -76,7 +76,8 @@ public class MyCustomAdapter extends BaseAdapter {
         Picasso.with(context).load(listOfVrVideoInfo[position].GetImageURl()).fit().transform(new RoundedTransformation(2, 0)).into(holder.imageView);
 
         // Passes video info to video info activity that is being loaded
-        if (listOfVrVideoInfo[position].GetCollectionTitle() != null) {
+        if (!listOfVrVideoInfo[position].GetCollectionTitle().equals("null")){
+            Log.d("Brandan", listOfVrVideoInfo[position].GetTitle()+ " " +listOfVrVideoInfo[position].GetCollectionTitle());
             holder.imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -86,6 +87,7 @@ public class MyCustomAdapter extends BaseAdapter {
                 }
             });
         } else {
+            Log.d("Brandan", listOfVrVideoInfo[position].GetTitle()+ " " + "isNull");
             holder.imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
