@@ -6,6 +6,6 @@
     <string name="button_stream">Stream</string>
     <string name="loading_error">Loading Error: Retry?</string>
     <string name="id_facebook">602186126628351</string>
-    <string name="Consumer_Key">KeuEbz0NQhfW0ncHebRVYgQpL</string>
-    <string name="Secret_Key">8PJaJULVOT5RDJrZw512ynUsOPW7aG6XcmUiTRipnyYDhCCX59</string>
+    <string name="twitter_consumer_key">uGHrcNiguMmBwvOYVqOystXzp</string>
+    <string name="twitter_secret_key">LczoAWpk0YE7mVA9IS65Q6FVHekP621QbTzZyK4o9KPenQzM23</string>
 </resources>

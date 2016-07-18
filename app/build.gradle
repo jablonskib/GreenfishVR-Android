@@ -1,9 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        release {
+        }
+    }
     compileSdkVersion 24
     buildToolsVersion "23.0.3"
-
     packagingOptions {
         exclude 'META-INF/maven/com.squareup/otto/pom.xml'
         exclude 'META-INF/maven/com.squareup.picasso/picasso/pom.properties'
@@ -22,6 +25,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }

@@ -1,21 +1,33 @@
 package com.greenfishlabs.greenfishlabs.greenfishvr;
 
 import com.facebook.FacebookSdk;
+import com.facebook.share.model.ShareHashtag;
 import com.facebook.share.model.ShareLinkContent;
+import com.facebook.share.widget.ShareButton;
 import com.facebook.share.widget.ShareDialog;
 import com.google.vr.sdk.widgets.video.VrVideoEventListener;
 import com.google.vr.sdk.widgets.video.VrVideoView;
 import com.squareup.picasso.Picasso;
+import twitter4j.*;
+import twitter4j.auth.AccessToken;
+import twitter4j.auth.RequestToken;
+import twitter4j.conf.Configuration;
+import twitter4j.conf.ConfigurationBuilder;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -51,6 +63,9 @@ public class VideoViewer extends Activity {
     public String imageUrl;
     private TextView titleLabel, authorLabel, viewsLabel, descriptionLabel, playBtn;
 
+    private ShareButton shareButton;
+    private Twitter mTwitter;
+    private RequestToken requestToken;
 
     static {
         //System.loadLibrary("gvr");
@@ -128,6 +143,18 @@ public class VideoViewer extends Activity {
         // Initial launch of the app or an Activity recreation due to rotation.
         handleIntent(getIntent());
         videoIsLoaded = true;
+
+        //set facebook share button and its parameters
+        shareButton = (ShareButton) findViewById(R.id.shareButton);
+        ShareLinkContent slc = new ShareLinkContent.Builder().setContentDescription(videoDesc)
+                .setContentTitle(videoTitle).setQuote("View now on the Greenfish VR app.")
+                .setContentDescription(videoDesc)
+                .setContentUrl(Uri.parse(fileUriString)).setImageUrl(Uri.parse(imageUrl)).build();
+        shareButton.setShareContent(slc);
+
+        //set twitter_logo share button and its parameters
+        mTwitter = new TwitterFactory().getInstance();
+        mTwitter.setOAuthConsumer(getResources().getString(R.string.twitter_consumer_key), getResources().getString(R.string.twitter_secret_key));
     }
 
     @Override
@@ -237,6 +264,9 @@ public class VideoViewer extends Activity {
 
         previewImage.setVisibility(View.GONE);
         videoWidgetView.setVisibility(View.VISIBLE);
+
+        LinearLayout seekBarContainer = (LinearLayout) findViewById(R.id.seekBarContainer);
+        seekBarContainer.setVisibility(View.VISIBLE);
 
         try { // try to load video from video url
             videoWidgetView.loadVideo(Uri.parse(fileUriString), null);
@@ -356,13 +386,11 @@ public class VideoViewer extends Activity {
         }
     };
 
-    public void ShareToFacebook(View view) {
-        Log.d("ShareButton", "Pressed");
-        ShareDialog sd = new ShareDialog(this);
+    public void TwitterTweet (View view) {
 
-        ShareLinkContent slc = new ShareLinkContent.Builder().setContentDescription(videoDesc)
-                .setContentTitle(videoTitle).setQuote("View now on the Greenfish VR app.")
-                .setContentUrl(Uri.parse(fileUriString)).setImageUrl(Uri.parse(imageUrl)).build();
-        sd.show(slc );
+    }
+
+    public void TwitterLoginClick (View view) {
+
     }
 }

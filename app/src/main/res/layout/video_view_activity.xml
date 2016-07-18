@@ -91,18 +91,26 @@
                 android:layout_below="@+id/videoContainer"
                 android:weightSum="1">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:text="00:00/00:00"
-                    android:id="@+id/timestampText"
-                    android:paddingLeft="@dimen/video_page_text_padding" />
-
-                <SeekBar
+                <LinearLayout
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/seekBar" />
+                    android:layout_height="match_parent"
+                    android:id="@+id/seekBarContainer"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="00:00/00:00"
+                        android:id="@+id/timestampText"
+                        android:paddingLeft="@dimen/video_page_text_padding" />
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seekBar" />
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="212dp"
@@ -184,22 +192,36 @@
                     android:paddingRight="12dp"
                     android:paddingTop="6dp"
                     android:paddingBottom="6dp"
-                    android:layout_marginTop="20dp"
-                    android:textSize="10dp" />
+                    android:layout_marginTop="10dp"
+                    android:textSize="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <com.facebook.share.widget.ShareButton
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/shareButton"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="visible"
+                    android:layout_below="@+id/scrollView"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:layout_width="82dp"
+                    android:layout_height="32dp"
+                    android:text="Tweet"
+                    android:id="@+id/button"
+                    android:background="@drawable/tweet_button"
+                    android:paddingLeft="28dp"
+                    android:paddingRight="8dp"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal" />
 
             </LinearLayout>
 
         </RelativeLayout>
     </ScrollView>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Share To Facebook"
-        android:id="@+id/shareButton"
-        android:layout_gravity="center_horizontal"
-        android:onClick="ShareToFacebook"
-        android:visibility="gone" />
 
 
 </RelativeLayout>
