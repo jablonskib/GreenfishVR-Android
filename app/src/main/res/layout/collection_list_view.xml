@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/loading_error"
-        android:id="@+id/textView"
+        android:id="@+id/loading_error"
         android:layout_gravity="center_horizontal"
         android:textColor="#fff"
         android:padding="15dp"

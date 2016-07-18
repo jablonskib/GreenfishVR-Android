@@ -42,7 +42,7 @@ public class MenuCollectionActivity extends Activity {
 
         videoInfo = getIntent().getParcelableArrayListExtra("rData");
         lView = (ListView) findViewById(R.id.collectionListView);
-        //loadingError = (TextView) findViewById(R.id.loading_error);
+        loadingError = (TextView) findViewById(R.id.loading_error);
 
         Bundle b = getIntent().getExtras();
 
@@ -100,7 +100,7 @@ public class MenuCollectionActivity extends Activity {
 
                 if (videoDataArrayList.size() > 0) { // if info was retrieved from server, populate list view with buttons
                     videoInfo = videoDataArrayList;
-                    //loadingError.setVisibility(View.GONE);
+                    loadingError.setVisibility(View.GONE);
 
                     VrVideoInfo[] info = videoInfo.toArray(new VrVideoInfo[videoInfo.size()]);
                     Log.d("info size", Integer.toString(info.length));
