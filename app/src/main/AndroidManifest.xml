@@ -36,13 +36,7 @@
         <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.MenuCollectionActivity"
             android:screenOrientation="portrait" />
         <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.VideoViewer"
-            android:screenOrientation="portrait" >
-            <intent-filter>
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="oauth" android:host="t4jsample"/>
-            </intent-filter>
-        </activity>
-
+            android:screenOrientation="portrait" />
         <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.SplashScreen"
             android:screenOrientation="portrait">
             <intent-filter>

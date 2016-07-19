@@ -67,7 +67,7 @@
         android:paddingRight="12dp"
         android:paddingTop="6dp"
         android:paddingBottom="6dp"
-        android:textSize="10dp"
+        android:textSize="14dp"
         android:layout_below="@+id/previewImage"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp" />
