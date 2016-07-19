@@ -45,7 +45,8 @@ public class SplashScreen extends Activity {
                 Log.d("jArraySize", Integer.toString(videoDataJSON.length()));
                 for(int i = 0; i < videoDataJSON.length(); i++) {
                     try {
-                        videoDataArrayList.add(new VrVideoInfo(videoDataJSON.getJSONObject(i).getString("title"),
+                        videoDataArrayList.add(new VrVideoInfo(
+                                videoDataJSON.getJSONObject(i).getString("title"),
                                 videoDataJSON.getJSONObject(i).getString("videoAuthor"),
                                 videoDataJSON.getJSONObject(i).getString("description"),
                                 videoDataJSON.getJSONObject(i).getString("url"),
@@ -53,7 +54,7 @@ public class SplashScreen extends Activity {
                                 videoDataJSON.getJSONObject(i).getInt("id"),
                                 videoDataJSON.getJSONObject(i).getString("imageUrl"),
                                 videoDataJSON.getJSONObject(i).getString("collectionName")
-                        )
+                            )
                         );
                     } catch (JSONException e) {
                         e.printStackTrace();

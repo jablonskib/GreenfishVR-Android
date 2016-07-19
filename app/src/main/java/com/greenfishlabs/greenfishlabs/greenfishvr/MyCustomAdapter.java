@@ -82,6 +82,9 @@ public class MyCustomAdapter extends BaseAdapter {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(activity, MenuCollectionActivity.class);
+                    intent.putExtra("title", listOfVrVideoInfo[position].GetTitle());
+                    intent.putExtra("description", listOfVrVideoInfo[position].GetDescription());
+                    intent.putExtra("previewImageUrl", listOfVrVideoInfo[position].GetImageURl());
                     intent.putExtra("videoCollectionTitle", listOfVrVideoInfo[position].GetCollectionTitle());
                     activity.startActivity(intent);
                 }

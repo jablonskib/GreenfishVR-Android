@@ -4,11 +4,15 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.v4.widget.TextViewCompat;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -40,11 +44,19 @@ public class MenuCollectionActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.collection_list_view);
 
+        Bundle b = getIntent().getExtras();
+
         videoInfo = getIntent().getParcelableArrayListExtra("rData");
         lView = (ListView) findViewById(R.id.collectionListView);
         loadingError = (TextView) findViewById(R.id.loading_error);
 
-        Bundle b = getIntent().getExtras();
+        TextView titleLabel = (TextView) findViewById(R.id.collectionTitle);
+        TextView descriptionLabel = (TextView) findViewById(R.id.collectionDescription);
+        ImageView previewImage = (ImageView) findViewById(R.id.previewImage);
+
+        titleLabel.setText(b.getString("title"));
+        descriptionLabel.setText(b.getString("description"));
+        Picasso.with(getApplicationContext()).load(b.getString("previewImageUrl")).fit().transform(new RoundedTransformation(2, 0)).into(previewImage);
 
         if (b.getString("videoCollectionTitle") != null) {
             cf = new CollectionFetch();
@@ -54,8 +66,10 @@ public class MenuCollectionActivity extends Activity {
             cf.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
             r.run();
         }
+    }
 
-
+    public void GoBack (View view) {
+        finish();
     }
 
     public void onServerRetry (View view) { // Retry retrieving video info from server
