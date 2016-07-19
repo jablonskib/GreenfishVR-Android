@@ -194,7 +194,7 @@
                     android:paddingBottom="6dp"
                     android:layout_marginTop="10dp"
                     android:textSize="10dp"
-                    android:layout_marginBottom="10dp" />
+                    android:layout_marginBottom="30dp" />
 
                 <com.facebook.share.widget.ShareButton
                     android:layout_width="84dp"

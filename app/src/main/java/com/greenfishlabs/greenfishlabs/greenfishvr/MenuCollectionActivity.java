@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.widget.TextViewCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -24,6 +23,7 @@ import java.util.Map;
 /**
  * Created by DeathStar on 7/16/16.
  */
+
 public class MenuCollectionActivity extends Activity {
 
     private final Handler h = new Handler();
@@ -54,7 +54,7 @@ public class MenuCollectionActivity extends Activity {
         TextView descriptionLabel = (TextView) findViewById(R.id.collectionDescription);
         ImageView previewImage = (ImageView) findViewById(R.id.previewImage);
 
-        titleLabel.setText(b.getString("title"));
+        titleLabel.setText(b.getString("title").toUpperCase());
         descriptionLabel.setText(b.getString("description"));
         Picasso.with(getApplicationContext()).load(b.getString("previewImageUrl")).fit().transform(new RoundedTransformation(2, 0)).into(previewImage);
 
@@ -81,6 +81,8 @@ public class MenuCollectionActivity extends Activity {
         cf.SetParameters(params);
         cf.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         r.run();
+
+        loadingError.setVisibility(View.GONE);
     }
 
     final Runnable r = new Runnable() {
@@ -118,13 +120,12 @@ public class MenuCollectionActivity extends Activity {
 
                     VrVideoInfo[] info = videoInfo.toArray(new VrVideoInfo[videoInfo.size()]);
                     Log.d("info size", Integer.toString(info.length));
-                    if(lView == null)
-                    {
-                        Log.d("lview", "null");
+                    if(lView == null) {
+                        Log.d("Brandan", "lView is null");
                     }
                     adapter = new MyCustomAdapter(info, MenuCollectionActivity.this, getApplicationContext());
-
                     lView.setAdapter(adapter);
+
                     cf.cancel(true);
                 } else {
                     loadingError.setVisibility(View.VISIBLE);

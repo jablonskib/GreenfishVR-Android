@@ -65,6 +65,7 @@ public class MenuActivity extends Activity {
         rvi.SetUrlConnection("http://www.greenfishvr.com/fetchVideos.php");
         rvi.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         r.run();
+        loadingError.setVisibility(View.GONE);
     }
 
     // This runnable runs to constantly check if the server responded with data.

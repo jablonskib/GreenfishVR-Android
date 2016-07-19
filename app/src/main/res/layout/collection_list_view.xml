@@ -17,8 +17,8 @@
         android:scrollingCache="true"
         android:clipToPadding="false"
         android:visibility="visible"
-        android:layout_below="@+id/collectionDescription"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/collectionDescription" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
         android:paddingRight="12dp"
         android:paddingTop="6dp"
         android:paddingBottom="6dp"
-        android:textSize="14dp"
+        android:textSize="10dp"
         android:layout_below="@+id/previewImage"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp" />
@@ -89,10 +89,11 @@
         android:text="@string/lipsum_one_para"
         android:id="@+id/collectionDescription"
         android:textColor="#fff"
-        android:textSize="16dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:textStyle="italic"
+        android:textSize="14dp"
         android:layout_below="@+id/collectionTitle"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="@dimen/video_page_text_padding"
+        android:paddingRight="@dimen/video_page_text_padding" />
+
 </RelativeLayout>

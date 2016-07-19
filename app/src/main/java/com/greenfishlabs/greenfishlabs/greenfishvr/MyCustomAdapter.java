@@ -69,9 +69,6 @@ public class MyCustomAdapter extends BaseAdapter {
             holder = (Holder)convertView.getTag();
         }
 
-        //int buttonWidth = convertView.getWidth();
-        //int buttonHeight = convertView.getHeight();
-
         // Inject preview image into each button
         Picasso.with(context).load(listOfVrVideoInfo[position].GetImageURl()).fit().transform(new RoundedTransformation(2, 0)).into(holder.imageView);
 

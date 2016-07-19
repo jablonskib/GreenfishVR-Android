@@ -13,6 +13,5 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="colorPrimaryDark">@color/greenfishGreen</item>
         <item name="android:listViewStyle">@style/AppTheme</item>
-
     </style>
 </resources>
