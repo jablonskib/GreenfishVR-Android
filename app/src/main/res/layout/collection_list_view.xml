@@ -2,6 +2,7 @@
 <RelativeLayout tools:context=".MenuActivity"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -18,7 +19,7 @@
         android:clipToPadding="false"
         android:visibility="visible"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/collectionDescription" />
+        android:layout_below="@+id/menuButton" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,7 +32,7 @@
         android:visibility="gone"
         android:onClick="onServerRetry"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/collectionDescription" />
+        android:layout_below="@+id/menuButton" />
 
     <ImageView
         android:layout_width="fill_parent"
@@ -43,14 +44,6 @@
         android:scaleType="centerInside"
         android:padding="@dimen/top_bar_logo_padding"
         android:background="@color/background_gray_transparent" />
-
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="200dp"
-        android:id="@+id/previewImage"
-        android:layout_below="@+id/logo"
-        android:layout_alignParentStart="true"
-        android:background="#b0b0b0" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,20 +61,36 @@
         android:paddingTop="6dp"
         android:paddingBottom="6dp"
         android:textSize="10dp"
-        android:layout_below="@+id/previewImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/collectionDescription"
         android:layout_centerHorizontal="true"
-        android:layout_margin="10dp" />
+        android:layout_marginBottom="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sample Collection Title"
+        fontPath="fonts/MyriadProBold.otf"
+        android:text="SAMPLE COLLECTION TITLE"
         android:id="@+id/collectionTitle"
-        android:layout_below="@+id/menuButton"
-        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:paddingLeft="@dimen/video_page_text_padding"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fontPath="fonts/MyriadProRegular.ttf"
+        android:text="Sample Collection Author"
+        android:id="@+id/collectionAuthor"
+        android:layout_below="@+id/collectionTitle"
         android:textColor="#fff"
         android:layout_marginBottom="10dp"
-        android:textSize="18dp" />
+        android:textSize="12dp"
+        android:paddingLeft="@dimen/video_page_text_padding"
+        android:layout_marginTop="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -90,7 +99,7 @@
         android:id="@+id/collectionDescription"
         android:textColor="#fff"
         android:textSize="14dp"
-        android:layout_below="@+id/collectionTitle"
+        android:layout_below="@+id/collectionAuthor"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:paddingLeft="@dimen/video_page_text_padding"

@@ -1,6 +1,7 @@
 package com.greenfishlabs.greenfishlabs.greenfishvr;
 
 import android.app.Activity;
+import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -17,6 +18,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import java.util.ArrayList;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MenuActivity extends Activity {
     private final Handler h = new Handler();
@@ -57,6 +60,11 @@ public class MenuActivity extends Activity {
         lView.setScrollingCacheEnabled(false);
         lView.setDrawingCacheEnabled(false);
         lView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     public void onServerRetry (View view) { // Retry retrieving video info from server

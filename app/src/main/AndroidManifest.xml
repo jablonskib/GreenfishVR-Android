@@ -29,7 +29,7 @@
         android:label="Greenfish VR"
         android:supportsRtl="true"
         android:largeHeap="true"
-        android:name="android.support.multidex.MultiDexApplication"
+        android:name=".Application"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
         <activity android:name="com.greenfishlabs.greenfishlabs.greenfishvr.MenuActivity"
             android:screenOrientation="portrait" />

@@ -13,8 +13,10 @@ import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
 import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -155,6 +157,11 @@ public class VideoViewer extends Activity {
         //set twitter_logo share button and its parameters
         mTwitter = new TwitterFactory().getInstance();
         mTwitter.setOAuthConsumer(getResources().getString(R.string.twitter_consumer_key), getResources().getString(R.string.twitter_secret_key));
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     @Override

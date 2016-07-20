@@ -1,5 +1,6 @@
 package com.greenfishlabs.greenfishlabs.greenfishvr;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -11,6 +12,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import java.util.ArrayList;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class SplashScreen extends Activity {
     private final Handler h = new Handler();
@@ -30,6 +33,11 @@ public class SplashScreen extends Activity {
         rvi.SetUrlConnection("http://ec2-54-84-102-152.compute-1.amazonaws.com/fetchVideos.php");
         rvi.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
         r.run();
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     final Runnable r = new Runnable() {
