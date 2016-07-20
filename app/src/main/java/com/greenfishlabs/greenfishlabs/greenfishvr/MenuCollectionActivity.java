@@ -1,6 +1,7 @@
 package com.greenfishlabs.greenfishlabs.greenfishvr;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -19,6 +20,8 @@ import org.json.JSONException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 /**
  * Created by DeathStar on 7/16/16.
@@ -51,12 +54,14 @@ public class MenuCollectionActivity extends Activity {
         loadingError = (TextView) findViewById(R.id.loading_error);
 
         TextView titleLabel = (TextView) findViewById(R.id.collectionTitle);
+        TextView authorLabel = (TextView) findViewById(R.id.collectionAuthor);
         TextView descriptionLabel = (TextView) findViewById(R.id.collectionDescription);
-        ImageView previewImage = (ImageView) findViewById(R.id.previewImage);
+        //ImageView previewImage = (ImageView) findViewById(R.id.previewImage);
 
         titleLabel.setText(b.getString("title").toUpperCase());
+        authorLabel.setText(b.getString("author"));
         descriptionLabel.setText(b.getString("description"));
-        Picasso.with(getApplicationContext()).load(b.getString("previewImageUrl")).fit().transform(new RoundedTransformation(2, 0)).into(previewImage);
+        //Picasso.with(getApplicationContext()).load(b.getString("previewImageUrl")).fit().transform(new RoundedTransformation(2, 0)).into(previewImage);
 
         if (b.getString("videoCollectionTitle") != null) {
             cf = new CollectionFetch();
@@ -66,6 +71,11 @@ public class MenuCollectionActivity extends Activity {
             cf.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
             r.run();
         }
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     public void GoBack (View view) {
@@ -98,6 +108,30 @@ public class MenuCollectionActivity extends Activity {
                 Log.d("jArraySize", Integer.toString(videoDataJSON.length()));
                 for(int i = 0; i < videoDataJSON.length(); i++) {
                     try {
+                        videoDataArrayList.add(
+                                new VrVideoInfo(
+                                        videoDataJSON.getJSONObject(i).getString("title"),
+                                        videoDataJSON.getJSONObject(i).getString("videoAuthor"),
+                                        videoDataJSON.getJSONObject(i).getString("description"),
+                                        videoDataJSON.getJSONObject(i).getString("url"),
+                                        videoDataJSON.getJSONObject(i).getInt("views"),
+                                        videoDataJSON.getJSONObject(i).getInt("id"),
+                                        videoDataJSON.getJSONObject(i).getString("imageUrl")
+                                )
+                        );
+
+                        videoDataArrayList.add(
+                                new VrVideoInfo(
+                                        videoDataJSON.getJSONObject(i).getString("title"),
+                                        videoDataJSON.getJSONObject(i).getString("videoAuthor"),
+                                        videoDataJSON.getJSONObject(i).getString("description"),
+                                        videoDataJSON.getJSONObject(i).getString("url"),
+                                        videoDataJSON.getJSONObject(i).getInt("views"),
+                                        videoDataJSON.getJSONObject(i).getInt("id"),
+                                        videoDataJSON.getJSONObject(i).getString("imageUrl")
+                                )
+                        );
+
                         videoDataArrayList.add(
                                 new VrVideoInfo(
                                         videoDataJSON.getJSONObject(i).getString("title"),
