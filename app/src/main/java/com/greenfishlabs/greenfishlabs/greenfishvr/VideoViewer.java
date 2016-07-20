@@ -8,6 +8,9 @@ import com.facebook.share.widget.ShareDialog;
 import com.google.vr.sdk.widgets.video.VrVideoEventListener;
 import com.google.vr.sdk.widgets.video.VrVideoView;
 import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Transformation;
+
+import jp.wasabeef.picasso.transformations.CropTransformation;
 import twitter4j.*;
 import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
@@ -19,12 +22,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ImageButton;
@@ -64,6 +69,7 @@ public class VideoViewer extends Activity {
     public String videoTitle, videoAuthor;
     public String imageUrl;
     private TextView titleLabel, authorLabel, viewsLabel, descriptionLabel, playBtn;
+    private ImageView previewImage;
 
     private ShareButton shareButton;
     private Twitter mTwitter;
@@ -89,6 +95,7 @@ public class VideoViewer extends Activity {
         descriptionLabel = (TextView) findViewById(R.id.description);
         seekbar = (SeekBar)findViewById(R.id.seekBar);
         playBtn = (TextView) findViewById(R.id.playBtn);
+        previewImage = (ImageView) findViewById(R.id.previewImage);
 
         Bundle b = getIntent().getExtras();
         if (b.getString("video_title") != null) {
@@ -127,15 +134,27 @@ public class VideoViewer extends Activity {
             Log.d(TAG, "Video description not found");
         }
 
+        previewImage.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                previewImage.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                int cropSizeX = 400;
+                int cropSizeY = cropSizeX*9/16;
+                Bundle b = getIntent().getExtras();
+                if (b.getString("imageUrl") != null) {
+                    imageUrl = b.getString("imageUrl");
+                    ImageView previewImage = (ImageView) findViewById(R.id.previewImage);
+                    Picasso.with(getApplicationContext())
+                            .load(imageUrl)
+                            .transform(new CropTransformation(cropSizeX, cropSizeY, 1920-cropSizeX, 1080-cropSizeY))
+                            .into(previewImage);
+                } else {
+                    Log.d(TAG, "Image URL Not Found");
+                }
+            }
+        });
 
-
-        if (b.getString("imageUrl") != null) {
-            imageUrl = b.getString("imageUrl");
-            ImageView previewImage = (ImageView) findViewById(R.id.previewImage);
-            Picasso.with(getApplicationContext()).load(imageUrl).fit().into(previewImage);
-        } else {
-            Log.d(TAG, "Image URL Not Found");
-        }
+        imageUrl = b.getString("imageUrl");
 
         videoId = b.getInt("videoId");
         Log.d("Video ID: ", Integer.toString(b.getInt("videoId")));

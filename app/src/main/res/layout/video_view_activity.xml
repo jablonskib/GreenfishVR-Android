@@ -20,8 +20,7 @@
 
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:id="@+id/topBar"
-                android:background="#000">
+                android:id="@+id/topBar">
                 <ImageView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -31,20 +30,7 @@
                     android:maxHeight="@dimen/top_bar_height"
                     android:scaleType="centerInside"
                     android:padding="@dimen/top_bar_logo_padding"
-                    android:background="@color/background_gray_transparent" />
-
-                <ImageView
-                    android:layout_width="46dp"
-                    android:layout_height="46dp"
-                    android:maxHeight="90dp"
-                    android:background="#00000000"
-                    android:id="@+id/backbtn"
-                    android:src="@drawable/back_button"
-                    android:cropToPadding="false"
-                    android:adjustViewBounds="true"
-                    android:layout_gravity="left|center_vertical"
-                    android:onClick="GoBack"
-                    android:visibility="gone" />
+                    android:background="@color/background_gray" />
 
             </FrameLayout>
 
@@ -58,9 +44,10 @@
                     android:layout_width="fill_parent"
                     android:layout_height="200dp"
                     android:id="@+id/previewImage"
-                    android:background="#b0b0b0"
+                    android:background="#000"
                     android:visibility="visible"
-                    android:contentDescription="preview image" />
+                    android:contentDescription="preview image"
+                    android:adjustViewBounds="true" />
 
                 <com.google.vr.sdk.widgets.video.VrVideoView
                     android:layout_width="fill_parent"
@@ -68,20 +55,6 @@
                     android:id="@+id/vrViewer"
                     android:layout_gravity="center_horizontal"
                     android:visibility="gone" />
-
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="250dp"
-                    android:id="@+id/playIcon"
-                    android:src="@drawable/play_icon"
-                    android:adjustViewBounds="true"
-                    android:visibility="gone"
-                    android:layout_gravity="center"
-                    android:padding="60dp"
-                    android:scaleType="centerInside"
-                    android:onClick="PlayVideo"
-                    android:contentDescription="play icon"
-                    android:background="#00ffffff" />
 
             </FrameLayout>
 
@@ -144,7 +117,7 @@
                     fontPath="fonts/MyriadProRegular.ttf"
                     android:text="Sample Video Author"
                     android:id="@+id/videoAuthorLabel"
-                    android:textSize="12dp"
+                    android:textSize="14dp"
                     android:textColor="#000"
                     android:paddingLeft="@dimen/video_page_text_padding"
                     android:paddingBottom="10dp"
@@ -159,7 +132,8 @@
                     android:textColor="#000"
                     android:paddingLeft="@dimen/video_page_text_padding"
                     android:paddingRight="@dimen/video_page_text_padding"
-                    android:paddingBottom="@dimen/video_page_text_padding" />
+                    android:paddingBottom="@dimen/video_page_text_padding"
+                    android:textSize="12dp" />
 
                 <TextView
                     android:layout_width="wrap_content"

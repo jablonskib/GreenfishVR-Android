@@ -119,30 +119,6 @@ public class MenuCollectionActivity extends Activity {
                                         videoDataJSON.getJSONObject(i).getString("imageUrl")
                                 )
                         );
-
-                        videoDataArrayList.add(
-                                new VrVideoInfo(
-                                        videoDataJSON.getJSONObject(i).getString("title"),
-                                        videoDataJSON.getJSONObject(i).getString("videoAuthor"),
-                                        videoDataJSON.getJSONObject(i).getString("description"),
-                                        videoDataJSON.getJSONObject(i).getString("url"),
-                                        videoDataJSON.getJSONObject(i).getInt("views"),
-                                        videoDataJSON.getJSONObject(i).getInt("id"),
-                                        videoDataJSON.getJSONObject(i).getString("imageUrl")
-                                )
-                        );
-
-                        videoDataArrayList.add(
-                                new VrVideoInfo(
-                                        videoDataJSON.getJSONObject(i).getString("title"),
-                                        videoDataJSON.getJSONObject(i).getString("videoAuthor"),
-                                        videoDataJSON.getJSONObject(i).getString("description"),
-                                        videoDataJSON.getJSONObject(i).getString("url"),
-                                        videoDataJSON.getJSONObject(i).getInt("views"),
-                                        videoDataJSON.getJSONObject(i).getInt("id"),
-                                        videoDataJSON.getJSONObject(i).getString("imageUrl")
-                                )
-                        );
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
